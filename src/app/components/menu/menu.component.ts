@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDrawer } from '@angular/material';
 
 @Component({
   selector: 'app-menu',
@@ -8,33 +9,45 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
+  @ViewChild('drawer') drawer: MatDrawer;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  closeDrawer() {
+    this.drawer.close();
+  }
+
   navHome() {
     this.router.navigateByUrl('/home');
+    this.closeDrawer();
   }
 
   navAbout() {
     this.router.navigateByUrl('/about');
+    this.closeDrawer();
   }
 
   navElla() {
     this.router.navigateByUrl('/ella');
+    this.closeDrawer();
   }
 
   navJames() {
     this.router.navigateByUrl('/james');
+    this.closeDrawer();
   }
 
   navLitters() {
     this.router.navigateByUrl('/litters');
+    this.closeDrawer();
   }
 
   navFotos() {
     this.router.navigateByUrl('/fotos');
+    this.closeDrawer();
   }
 
 }

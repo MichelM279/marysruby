@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'theme';
 
 body {
     margin: 0;
-    background-color: #E0115F;
+    background-color: $main-colour;
 }

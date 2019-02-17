@@ -33,15 +33,15 @@ const routes: Routes = [
     AppComponent,
     // Pages
     HomeComponent,
-    // Components
-    HeaderComponent,
-    MenuComponent,
-    NotFoundComponent,
     EllaComponent,
     JamesComponent,
     AboutComponent,
     LittersComponent,
-    FotosComponent
+    FotosComponent,
+    NotFoundComponent,
+    // Components
+    HeaderComponent,
+    MenuComponent
   ],
   imports: [
     BrowserAnimationsModule,
