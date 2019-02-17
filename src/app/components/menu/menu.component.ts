@@ -50,4 +50,9 @@ export class MenuComponent implements OnInit {
     this.closeDrawer();
   }
 
+  navContact() {
+    this.router.navigateByUrl('/contact');
+    this.closeDrawer();
+  }
+
 }

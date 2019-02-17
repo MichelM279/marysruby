@@ -16,6 +16,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 // Components
 import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'james', component: JamesComponent },
   { path: 'litters', component: LittersComponent },
   { path: 'fotos', component: FotosComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', component: NotFoundComponent}
 ];
 
@@ -41,7 +43,8 @@ const routes: Routes = [
     NotFoundComponent,
     // Components
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    ContactComponent
   ],
   imports: [
     BrowserAnimationsModule,
