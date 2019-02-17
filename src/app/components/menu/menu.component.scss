@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: white;
   }
   
   .sidenav {
@@ -17,7 +18,7 @@
     position: fixed;
     top: 60px;
     left: 0;
-    background-color: #E0115F;
+    border-right: 1px solid black;
   }
 
 .header {
@@ -27,9 +28,35 @@
 .menu-button {
   padding: 6px 12px 6px 6px;
   position: fixed;
-  top: 10px;
+  top: 4px;
   left: 0;
   background-color: rgb(185, 1, 72);
   border-radius: 0 25px 25px 0;
   z-index: 1000;
+}
+
+.sidenav-button {
+  background-color: transparent;
+  text-align: left;
+  &:hover {
+    background-color: rgb(185, 1, 72);
+  }
+}
+
+.sidenav-button-expansion {
+  text-align: left;
+  padding-left: 16px;
+  &:hover {
+    background-color: rgb(185, 1, 72) !important;
+  }
+}
+
+.drawer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.expansion-panel-content {
+  display: flex;
+  flex-direction: column;
 }
