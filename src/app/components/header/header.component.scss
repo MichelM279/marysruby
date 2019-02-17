@@ -13,4 +13,6 @@
     font-size: 32px; 
     padding-left: 60px;
     color: $highlight-colour;
+    white-space: nowrap;
+    overflow: hidden;
 }

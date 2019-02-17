@@ -7,7 +7,7 @@
   
   .sidenav-content {
     display: flex;
-    height: 100%;
+    min-height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -65,4 +65,14 @@
 .expansion-panel-content {
   display: flex;
   flex-direction: column;
+}
+
+.languages {
+  button {
+    margin: 2px;
+  }
+  img {
+    max-width: 26px;
+    margin: 0;
+  }
 }

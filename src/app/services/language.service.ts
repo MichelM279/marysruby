@@ -1,9 +1,5 @@
-import { Injectable } from '@angular/core';
-
-enum Language {
-  'GERMAN',
-  'ENGLISH'
-}
+import { Injectable, EventEmitter } from '@angular/core';
+import { Language } from 'src/app/datatypes/language';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +7,8 @@ enum Language {
 export class LanguageService {
 
   private _language: Language = Language.GERMAN;
+
+  languageChange: EventEmitter<boolean> = new EventEmitter();
 
   constructor() { }
 

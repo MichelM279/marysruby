@@ -35,6 +35,19 @@
       <button mat-button class='sidenav-button' (click)='navContact()'>
         <span>Kontakt</span>
       </button>
+
+      <div class='languages'>
+        <button mat-button (click)='langGerman()'>
+          <img src='assets/flag-de.png' alt='De'>
+        </button>
+        <button mat-button (click)='langEnglish()'>
+          <img src='assets/flag-uk.png' alt='Eng'>
+        </button>
+      </div>
+
+      <button mat-button class='sidenav-button' (click)='navImpressum()'>
+        <span>Impressum</span>
+      </button>
     </div>
   </mat-drawer>
 
