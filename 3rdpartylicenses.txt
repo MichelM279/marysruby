@@ -330,7 +330,14 @@ THE SOFTWARE.
 
 @angular/material/sidenav
 
+@angular/material/button
+
 @angular/material/icon
+
+@angular/material/expansion
+
+@angular/forms
+MIT
 
 zone.js
 MIT
