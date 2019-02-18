@@ -13,9 +13,27 @@ export class MenuComponent implements OnInit {
 
   @ViewChild('drawer') drawer: MatDrawer;
 
+  homepage: String;
+  homepageDe = 'Startseite';
+  homepageEn = 'Homepage';
+  about: String;
+  aboutDe = 'Über Uns';
+  aboutEn = 'About Us';
+  dogs: String;
+  dogsDe = 'Unsere Hunde';
+  dogsEn = 'Our Dogs';
+  puppies: String;
+  puppiesDe = 'Welpen';
+  puppiesEn = 'Puppies';
+  contact: String;
+  contactDe = 'Kontakt';
+  contactEn = 'Contact Us';
+
   constructor(private router: Router, private languageService: LanguageService) { }
 
   ngOnInit() {
+    this.languageService.subscribe(language => this.languageChanged(language));
+    this.languageChanged(this.languageService.language);
   }
 
   closeDrawer() {
@@ -68,6 +86,22 @@ export class MenuComponent implements OnInit {
 
   langEnglish() {
     this.languageService.language = Language.ENGLISH;
+  }
+
+  private languageChanged(language: Language) {
+    if (language === Language.ENGLISH) {
+      this.homepage = this.homepageEn;
+      this.about = this.aboutEn;
+      this.dogs = this.dogsEn;
+      this.puppies = this.puppiesEn;
+      this.contact = this.contactEn;
+    } else {
+      this.homepage = this.homepageDe;
+      this.about = this.aboutDe;
+      this.dogs = this.dogsDe;
+      this.puppies = this.puppiesDe;
+      this.contact = this.contactDe;
+    }
   }
 
 }

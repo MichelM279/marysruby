@@ -1,18 +1,18 @@
-<mat-drawer-container class='sidenav-container'>
+<mat-drawer-container class='sidenav-container' autosize>
   <mat-drawer #drawer class='sidenav' mode='side'>
     <div class='drawer-content'>
       <button mat-button class='sidenav-button' (click)='navHome()'>
         <mat-icon>home</mat-icon>
-        <span>Startseite</span>
+        <span>{{homepage}}</span>
       </button>
       <button mat-button class='sidenav-button' (click)='navAbout()'>
-        <span>Über Uns</span>
+        <span>{{about}}</span>
       </button>
       <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header class='sidenav-button-expansion'>
             <mat-panel-title>
-              Unsere Hunde
+              {{dogs}}
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class='expansion-panel-content'>
@@ -27,13 +27,13 @@
       </mat-accordion>
       
       <button mat-button class='sidenav-button' (click)='navLitters()'>
-        <span>Welpen</span>
+        <span>{{puppies}}</span>
       </button>
       <button mat-button class='sidenav-button' (click)='navFotos()'>
         <span>Fotos</span>
       </button>
       <button mat-button class='sidenav-button' (click)='navContact()'>
-        <span>Kontakt</span>
+        <span>{{contact}}</span>
       </button>
 
       <div class='languages'>
