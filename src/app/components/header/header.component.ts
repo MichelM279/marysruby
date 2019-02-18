@@ -9,7 +9,7 @@ import { LanguageService } from 'src/app/services/language.service';
 export class HeaderComponent implements OnInit {
 
   // tslint:disable-next-line:quotemark
-  title = "Marys Ruby's";
+  title = "Mary's Ruby";
 
   constructor() { }
 

@@ -17,12 +17,14 @@ import { EllaComponent } from './pages/ella/ella.component';
 import { JamesComponent } from './pages/james/james.component';
 import { LittersComponent } from './pages/litters/litters.component';
 import { FotosComponent } from './pages/fotos/fotos.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 // Components
 import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { ContactComponent } from './pages/contact/contact.component';
+import { DogCoverComponent } from './components/dog-cover/dog-cover.component';
+import { NewsCardComponent } from './components/news-card/news-card.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -52,7 +54,9 @@ const routes: Routes = [
     HeaderComponent,
     MenuComponent,
     ContactComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    DogCoverComponent,
+    NewsCardComponent
   ],
   imports: [
     BrowserAnimationsModule,

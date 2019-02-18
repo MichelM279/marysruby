@@ -8,7 +8,7 @@ export class LanguageService {
 
   private _language: Language = Language.GERMAN;
 
-  languageChange: EventEmitter<boolean> = new EventEmitter();
+  private languageChange: EventEmitter<Language> = new EventEmitter();
 
   constructor() { }
 
@@ -18,6 +18,11 @@ export class LanguageService {
 
   set language(language: Language) {
     this._language = language;
+    this.languageChange.emit(language);
+  }
+
+  public subscribe(callbackfkt) {
+    return this.languageChange.subscribe(callbackfkt);
   }
 
   public isGerman() {
