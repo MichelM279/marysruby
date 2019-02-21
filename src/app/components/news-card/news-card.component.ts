@@ -10,19 +10,19 @@ import { Language } from 'src/app/datatypes/language';
 export class NewsCardComponent implements OnInit {
 
   @Input()
-  titleDe: String;
+  private titleDe: String;
 
   @Input()
-  titleEn: String;
+  private titleEn: String;
 
   @Input()
   date: String;
 
   @Input()
-  textDe: String;
+  private textDe: String;
 
   @Input()
-  textEn: String;
+  private textEn: String;
 
   title: String;
   text: String;

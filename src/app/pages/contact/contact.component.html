@@ -1,3 +1,46 @@
-<p>
-  contact works!
-</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+
+    <form class='contact-form' (ngSubmit)='onSubmit()'>
+
+      <mat-form-field appearance='standard' class='form-item'>
+        <mat-label>Name</mat-label>
+        <input matInput ([ngModel])='contactDetails.name'
+          name='first'>
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field class='form-item'>
+        <mat-label>E-Mail</mat-label>
+        <input matInput [formControl]='emailFormControl'>
+        <mat-icon matSuffix>mail_outline</mat-icon>
+        <mat-error *ngIf="emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance='outline' class='form-item form-message'>
+        <mat-label>{{message}}</mat-label>
+        <textarea matInput
+          cdkTextareaAutosize
+          #autosize='cdkTextareaAutosize'
+          [(ngModel)]='contactDetails.message'
+          name='message'></textarea>
+        <mat-icon matSuffix>comment</mat-icon>
+      </mat-form-field>
+
+      <p class='submit-wrapper'>
+        <button mat-raised-button color='primary' type='submit'>Submit</button>
+      </p>
+
+    </form>
+
+  </mat-card-content>
+</mat-card>

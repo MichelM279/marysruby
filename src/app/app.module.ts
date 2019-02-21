@@ -1,15 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatButtonModule,
-  MatCardModule,
-  MatIconModule,
-  MatSidenavModule,
+import {
+  MatButtonModule,
   MatButtonToggleModule,
-  MatExpansionModule} from '@angular/material';
+  MatCardModule,
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatSidenavModule
+  } from '@angular/material';
 // Pages
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -61,13 +67,18 @@ const routes: Routes = [
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
+    CommonModule,
+    FormsModule,
     FlexLayoutModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
     MatExpansionModule,
+    MatFormFieldModule,
     MatIconModule,
+    MatInputModule,
     MatSidenavModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
