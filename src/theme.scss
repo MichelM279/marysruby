@@ -1,13 +1,24 @@
-$ruby: #861a22;
-$ruby-shadow: rgba(110,21,15,.5);
-$wheaten: #dbdbdb; // #F5DEB3;
-$complementary: #1a8780; 
-$black: black;
+@import '~@angular/material/theming';
 
-$menu-bar-colour: $ruby;
-$menu-border: 1px solid $black;
+// hue. Available color palettes: https://material.io/design/color/
+$ruby-app-primary: mat-palette($mat-teal);
+$ruby-app-accent:  mat-palette($mat-indigo);
+//$ruby-app-primary: mat-palette($mat-blue-gray);
+//$ruby-app-accent:  mat-palette($mat-indigo);
+$ruby-app-warn:    mat-palette($mat-red);
+
+$ruby-app-theme: mat-light-theme($ruby-app-primary, $ruby-app-accent, $ruby-app-warn);
+
+$primary: map-get($ruby-app-theme, primary);
+$accent: map-get($ruby-app-theme, accent);
+
+$header-bar-colour: mat-color($primary);
+$menu-bar-colour: mat-color($primary, darker);
+$menu-item-hover: mat-color($accent);
+$menu-border: 2px solid mat-color($accent, darker);
+
+// Definitions outside of main theme
+$wheaten: white;
+
 $head-text-colour: $wheaten;
-$card-highlight: $complementary;
-$menu-button: $complementary;
-$menu-item-hover: $complementary;
-$menu-item-hover-text: $black;
+$menu-item-hover-text: $wheaten;

@@ -24,11 +24,20 @@
             </button>
           </div>
         </mat-expansion-panel>
+        <mat-expansion-panel class='sidenav-expansion-panel'>
+          <mat-expansion-panel-header class='sidenav-button-expansion'>
+            <mat-panel-title class='sidenav-expansion-title'>
+              {{puppies}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class='expansion-panel-content'>
+            <button mat-button class='sidenav-button'>
+              <span>A</span>
+            </button>
+          </div>
+        </mat-expansion-panel>
       </mat-accordion>
       
-      <button mat-button class='sidenav-button' (click)='navLitters()'>
-        <span>{{puppies}}</span>
-      </button>
       <button mat-button class='sidenav-button' (click)='navFotos()'>
         <span>Fotos</span>
       </button>
@@ -57,7 +66,7 @@
   </div>
 
   <div class='menu-button'>
-      <button mat-icon-button (click)='drawer.toggle()'>
+      <button mat-raised-button color='accent' (click)='drawer.toggle()'>
         <mat-icon>menu</mat-icon>
       </button>
     </div>
