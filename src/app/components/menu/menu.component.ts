@@ -24,7 +24,7 @@ export class MenuComponent implements OnInit {
   dogsEn = 'Our Dogs';
   puppies: String;
   puppiesDe = 'Welpen';
-  puppiesEn = 'Puppies';
+  puppiesEn = 'Litters';
   contact: String;
   contactDe = 'Kontakt';
   contactEn = 'Contact Us';

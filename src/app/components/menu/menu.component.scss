@@ -53,15 +53,27 @@
   }
 }
 
+.sidenav-expansion-panel {
+  border-radius: 0 !important;
+  box-shadow: none;
+  ::ng-deep .mat-expansion-panel-content {
+    background-color: $menu-bar-colour;
+  }
+}
+
 .sidenav-button-expansion {
   text-align: left;
   padding-left: 16px;
   color: $highlight-colour;
-  // background-color: $menu-bar-colour;
+  background-color: $menu-bar-colour !important;
   &:hover {
     background-color: $menu-item-hover !important;
     color: black;
   }
+}
+
+.sidenav-expansion-title {
+  color: $head-text-colour;
 }
 
 .drawer-content {

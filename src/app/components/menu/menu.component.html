@@ -8,10 +8,10 @@
       <button mat-button class='sidenav-button' (click)='navAbout()'>
         <span>{{about}}</span>
       </button>
-      <mat-accordion>
-        <mat-expansion-panel>
+      <mat-accordion displayMode='flat'>
+        <mat-expansion-panel class='sidenav-expansion-panel'>
           <mat-expansion-panel-header class='sidenav-button-expansion'>
-            <mat-panel-title>
+            <mat-panel-title class='sidenav-expansion-title'>
               {{dogs}}
             </mat-panel-title>
           </mat-expansion-panel-header>
