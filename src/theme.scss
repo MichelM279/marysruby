@@ -2,14 +2,12 @@ $ruby: #861a22;
 $ruby-shadow: rgba(110,21,15,.5);
 $wheaten: #F5DEB3;
 $complementary: #1a8780; 
+$black: black;
 
 $menu-bar-colour: $ruby;
-$menu-border: 1px solid black;
+$menu-border: 1px solid $black;
 $head-text-colour: $wheaten;
 $card-highlight: $complementary;
 $menu-button: $complementary;
 $menu-item-hover: $complementary;
-
-
-$highlight-colour: $wheaten;
-$main-colour: $ruby;
+$menu-item-hover-text: $black;

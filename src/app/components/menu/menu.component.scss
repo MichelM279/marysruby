@@ -46,10 +46,10 @@
 .sidenav-button {
   background-color: transparent;
   text-align: left;
-  color: $highlight-colour;
+  color: $head-text-colour;
   &:hover {
     background-color: $menu-item-hover;
-    color: black;
+    color: $menu-item-hover-text;
   }
 }
 
@@ -64,11 +64,18 @@
 .sidenav-button-expansion {
   text-align: left;
   padding-left: 16px;
-  color: $highlight-colour;
   background-color: $menu-bar-colour !important;
   &:hover {
     background-color: $menu-item-hover !important;
-    color: black;
+    .sidenav-expansion-title {
+      color: $menu-item-hover-text;
+    }
+    ::ng-deep .mat-expansion-indicator:after {
+      color: $menu-item-hover-text;
+    }
+  }
+  ::ng-deep .mat-expansion-indicator:after {
+    color: $head-text-colour;
   }
 }
 
@@ -89,6 +96,9 @@
 .languages {
   button {
     margin: 2px;
+    &:hover {
+      background-color: $menu-item-hover;
+    }
   }
   img {
     max-width: 26px;
