@@ -17,3 +17,16 @@
         margin-left: auto; // TODO
     }
 }
+
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon-wrapper {
+  padding: 6px;
+  border-radius: 25px;
+  mat-icon {
+  }
+}
