@@ -3,6 +3,10 @@
 .sidenav-container {
     width: 100%;
     height: 100%;
+    background-color: $menu-bar-colour;
+    mat-drawer {
+      background-color: $menu-bar-colour;
+    }
   }
   
   .sidenav-content {
@@ -20,7 +24,7 @@
     position: fixed;
     top: 60px;
     left: 0;
-    border-right: 1px solid $highlight-colour;
+    border-right: $menu-border;
   }
 
 .header {
@@ -32,8 +36,10 @@
   position: fixed;
   top: 4px;
   left: 0;
-  background-color: $highlight-colour;
+  background-color: $menu-button;
   border-radius: 0 25px 25px 0;
+  border: $menu-border;
+  border-left: none;
   z-index: 1000;
 }
 
@@ -42,8 +48,8 @@
   text-align: left;
   color: $highlight-colour;
   &:hover {
-    background-color: $highlight-colour;
-    color: white;
+    background-color: $menu-item-hover;
+    color: black;
   }
 }
 
@@ -51,9 +57,10 @@
   text-align: left;
   padding-left: 16px;
   color: $highlight-colour;
+  // background-color: $menu-bar-colour;
   &:hover {
-    background-color: $highlight-colour !important;
-    color: white;
+    background-color: $menu-item-hover !important;
+    color: black;
   }
 }
 

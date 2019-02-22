@@ -1,10 +1,10 @@
 @import '../../../theme';
 
 .header-wrapper {
-    background-color: $main-colour;
+    background-color: $menu-bar-colour;
     width: 100%;
     height: 60px;
-    border-bottom: 1px solid $highlight-colour;
+    border-bottom: $menu-border;
 }
 
 .headline {
@@ -12,7 +12,7 @@
     font-weight: bold;
     font-size: 32px; 
     padding-left: 60px;
-    color: $highlight-colour;
+    color: $head-text-colour;
     white-space: nowrap;
     overflow: hidden;
 }
