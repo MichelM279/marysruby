@@ -1,8 +1,12 @@
 @import '~@angular/material/theming';
 
+@import 'theme-palette';
+
 // hue. Available color palettes: https://material.io/design/color/
-$ruby-app-primary: mat-palette($mat-teal);
-$ruby-app-accent:  mat-palette($mat-indigo);
+$ruby-app-primary: mat-palette($mat-gray, $default: 700, $lighter: 400);
+$ruby-app-accent:  mat-palette($mat-deep-orange, $default: A100, $lighter: 50, $darker: 400);
+// $ruby-app-primary: mat-palette($mat-teal);
+// $ruby-app-accent:  mat-palette($mat-indigo);
 //$ruby-app-primary: mat-palette($mat-blue-gray);
 //$ruby-app-accent:  mat-palette($mat-indigo);
 $ruby-app-warn:    mat-palette($mat-red);
@@ -12,13 +16,11 @@ $ruby-app-theme: mat-light-theme($ruby-app-primary, $ruby-app-accent, $ruby-app-
 $primary: map-get($ruby-app-theme, primary);
 $accent: map-get($ruby-app-theme, accent);
 
-$header-bar-colour: mat-color($primary);
+$background-colour: mat-color($primary, 100);
+$header-bar-colour: mat-color($primary, lighter);
+$header-text-colour: mat-color($primary, lighter-contrast);
 $menu-bar-colour: mat-color($primary, darker);
+$menu-text-colour: mat-color($primary, darker-contrast);
 $menu-item-hover: mat-color($accent);
+$menu-item-hover-text: mat-color($accent, default-contrast);
 $menu-border: 2px solid mat-color($accent, darker);
-
-// Definitions outside of main theme
-$wheaten: white;
-
-$head-text-colour: $wheaten;
-$menu-item-hover-text: $wheaten;

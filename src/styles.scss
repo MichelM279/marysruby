@@ -5,10 +5,15 @@
 
 @import "theme";
 
-@include angular-material-theme($ruby-app-theme);
+$global-font: 'Raleway';
+
+$custom-typography: mat-typography-config(
+  $font-family: $global-font
+);
 
 body {
   margin: 0;
+  font-family: 'Arial Narrow, sans-serif'
 }
 
 mat-card {
@@ -25,3 +30,7 @@ mat-card-subtitle {
   font-weight: lighter;
   font-style: italic;
 }
+
+
+@include angular-material-theme($ruby-app-theme);
+@include angular-material-typography($custom-typography);

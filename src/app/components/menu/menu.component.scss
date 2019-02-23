@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: white;
+  background-color: $background-colour;
 }
 
 .sidenav {
@@ -45,7 +45,7 @@
 .sidenav-button {
   background-color: transparent;
   text-align: left;
-  color: $head-text-colour;
+  color: $menu-text-colour;
   &:hover {
     color: $menu-item-hover-text;
     background-color: $menu-item-hover !important;
@@ -74,12 +74,12 @@
     }
   }
   ::ng-deep .mat-expansion-indicator:after {
-    color: $head-text-colour;
+    color: $menu-text-colour;
   }
 }
 
 .sidenav-expansion-title {
-  color: $head-text-colour;
+  color: $menu-text-colour;
 }
 
 .drawer-content {
