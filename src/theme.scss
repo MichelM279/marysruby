@@ -11,6 +11,7 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 $primary: map-get($app-theme, primary);
 $accent: map-get($app-theme, accent);
+$warn: map-get($app-theme, warn);
 
 $background-colour: mat-color($primary, 50);
 $header-bar-colour: mat-color($accent, lighter);
