@@ -22,9 +22,10 @@
   padding: 20px;
   z-index: 999;
   position: fixed;
-  top: 60px;
+  top: 0px;
   left: 0;
   border-right: $menu-border;
+  box-shadow: $menu-shadow;
 }
 
 .header {
@@ -40,6 +41,10 @@
     border-radius: 0 25px 25px 0;
     z-index: 1000;
   }
+}
+
+.space-for-menu-button {
+  height: 48px;
 }
 
 .sidenav-button {

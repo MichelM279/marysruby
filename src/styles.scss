@@ -1,5 +1,5 @@
 // @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "~@angular/material/theming";
+@import "~@angular/material/theming"; // kann der import raus? ist ja in theme drin
 
 @include mat-core();
 
@@ -13,13 +13,12 @@ $custom-typography: mat-typography-config(
 
 body {
   margin: 0;
-  font-family: 'Arial Narrow, sans-serif'
 }
 
 mat-card {
   margin-bottom: 6px;
   margin: 16px;
-  border-top: 2px solid mat-color($primary);
+  border-top: 2px solid mat-color($accent, lighter);
 }
 
 mat-card-title {
@@ -32,5 +31,5 @@ mat-card-subtitle {
 }
 
 
-@include angular-material-theme($ruby-app-theme);
+@include angular-material-theme($app-theme);
 @include angular-material-typography($custom-typography);

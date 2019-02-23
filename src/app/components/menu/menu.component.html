@@ -1,6 +1,14 @@
 <mat-drawer-container class='sidenav-container' autosize>
   <mat-drawer #drawer class='sidenav' mode='side'>
     <div class='drawer-content'>
+
+
+      <div class='menu-button'>
+        <button mat-raised-button color='accent' (click)='drawer.toggle()'>
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div class='space-for-menu-button'></div>
       <button mat-button class='sidenav-button' (click)='navHome()'>
         <mat-icon>home</mat-icon>
         <span>{{homepage}}</span>
@@ -37,7 +45,7 @@
           </div>
         </mat-expansion-panel>
       </mat-accordion>
-      
+
       <button mat-button class='sidenav-button' (click)='navFotos()'>
         <span>Fotos</span>
       </button>
@@ -66,9 +74,9 @@
   </div>
 
   <div class='menu-button'>
-      <button mat-raised-button color='accent' (click)='drawer.toggle()'>
-        <mat-icon>menu</mat-icon>
-      </button>
-    </div>
+    <button mat-raised-button color='accent' (click)='drawer.toggle()'>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
 
 </mat-drawer-container>

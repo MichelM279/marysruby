@@ -1,26 +1,24 @@
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 
-@import 'theme-palette';
+@import "theme-palette";
 
 // hue. Available color palettes: https://material.io/design/color/
-$ruby-app-primary: mat-palette($mat-gray, $default: 700, $lighter: 400);
-$ruby-app-accent:  mat-palette($mat-deep-orange, $default: A100, $lighter: 50, $darker: 400);
-// $ruby-app-primary: mat-palette($mat-teal);
-// $ruby-app-accent:  mat-palette($mat-indigo);
-//$ruby-app-primary: mat-palette($mat-blue-gray);
-//$ruby-app-accent:  mat-palette($mat-indigo);
-$ruby-app-warn:    mat-palette($mat-red);
+$app-primary: mat-palette($mat-gray, $default: 700, $lighter: 300);
+$app-accent: mat-palette($ruby-theme-accent, $lighter: 400);
+$app-warn: mat-palette($mat-red);
 
-$ruby-app-theme: mat-light-theme($ruby-app-primary, $ruby-app-accent, $ruby-app-warn);
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
-$primary: map-get($ruby-app-theme, primary);
-$accent: map-get($ruby-app-theme, accent);
+$primary: map-get($app-theme, primary);
+$accent: map-get($app-theme, accent);
 
-$background-colour: mat-color($primary, 100);
-$header-bar-colour: mat-color($primary, lighter);
-$header-text-colour: mat-color($primary, lighter-contrast);
-$menu-bar-colour: mat-color($primary, darker);
-$menu-text-colour: mat-color($primary, darker-contrast);
+$background-colour: mat-color($primary, 50);
+$header-bar-colour: mat-color($accent, lighter);
+$header-text-colour: mat-color($accent, lighter-contrast);
+$menu-bar-colour: mat-color($primary, lighter);
+$menu-text-colour: mat-color($primary, lighter-contrast);
 $menu-item-hover: mat-color($accent);
 $menu-item-hover-text: mat-color($accent, default-contrast);
-$menu-border: 2px solid mat-color($accent, darker);
+$header-border: 2px solid mat-color($accent, darker);
+$menu-border: none;
+$menu-shadow: 2px 0 4px 0 mat-color($primary, darker);
