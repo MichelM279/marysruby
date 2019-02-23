@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
@@ -31,6 +31,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { DogCoverComponent } from './components/dog-cover/dog-cover.component';
 import { NewsCardComponent } from './components/news-card/news-card.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -62,13 +63,13 @@ const routes: Routes = [
     ContactComponent,
     ImpressumComponent,
     DogCoverComponent,
-    NewsCardComponent
+    NewsCardComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
     CommonModule,
-    FormsModule,
     FlexLayoutModule,
     MatButtonModule,
     MatButtonToggleModule,

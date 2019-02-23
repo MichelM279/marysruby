@@ -6,7 +6,7 @@ import { Contact } from 'src/app/datatypes/contact';
 })
 export class EmailService {
 
-  constructor() { }
+  constructor() {}
 
   sendContactEmail(contact: Contact) {
     console.log(contact);
