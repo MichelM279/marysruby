@@ -35,6 +35,7 @@ import { NewsCardComponent } from './components/news-card/news-card.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { PedigreeCardComponent } from './components/pedigree-card/pedigree-card.component';
 import { ListItemsCardComponent } from './components/list-items-card/list-items-card.component';
+import { PolaroidComponent } from './components/polaroid/polaroid.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -69,7 +70,8 @@ const routes: Routes = [
     NewsCardComponent,
     ContactFormComponent,
     PedigreeCardComponent,
-    ListItemsCardComponent
+    ListItemsCardComponent,
+    PolaroidComponent
   ],
   imports: [
     BrowserAnimationsModule,
