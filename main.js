@@ -6317,6 +6317,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/contact-form/contact-form.component */ "./src/app/components/contact-form/contact-form.component.ts");
 /* harmony import */ var _components_pedigree_card_pedigree_card_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/pedigree-card/pedigree-card.component */ "./src/app/components/pedigree-card/pedigree-card.component.ts");
 /* harmony import */ var _components_list_items_card_list_items_card_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/list-items-card/list-items-card.component */ "./src/app/components/list-items-card/list-items-card.component.ts");
+/* harmony import */ var _components_polaroid_polaroid_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/polaroid/polaroid.component */ "./src/app/components/polaroid/polaroid.component.ts");
 
 
 
@@ -6338,6 +6339,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Components
+
 
 
 
@@ -6381,7 +6383,8 @@ var AppModule = /** @class */ (function () {
                 _components_news_card_news_card_component__WEBPACK_IMPORTED_MODULE_22__["NewsCardComponent"],
                 _components_contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_23__["ContactFormComponent"],
                 _components_pedigree_card_pedigree_card_component__WEBPACK_IMPORTED_MODULE_24__["PedigreeCardComponent"],
-                _components_list_items_card_list_items_card_component__WEBPACK_IMPORTED_MODULE_25__["ListItemsCardComponent"]
+                _components_list_items_card_list_items_card_component__WEBPACK_IMPORTED_MODULE_25__["ListItemsCardComponent"],
+                _components_polaroid_polaroid_component__WEBPACK_IMPORTED_MODULE_26__["PolaroidComponent"]
             ],
             imports: [
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"],
@@ -7132,6 +7135,90 @@ var PedigreeCardComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/polaroid/polaroid.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/components/polaroid/polaroid.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-card class='polaroid-card'>\n  <img mat-card-image src='{{imgPath}}' class='polaroid-img'>\n  <mat-card-content class='polaroid-text-area'>\n    <p class='polaroid-text'>\n      {{text}}\n    </p>\n  </mat-card-content>\n</mat-card>"
+
+/***/ }),
+
+/***/ "./src/app/components/polaroid/polaroid.component.scss":
+/*!*************************************************************!*\
+  !*** ./src/app/components/polaroid/polaroid.component.scss ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".polaroid-card {\n  border: none;\n  border-radius: 0;\n  margin: 24px 16px;\n  max-width: 500px;\n  transform: rotate(2deg);\n  -webkit-transform: rotate(2deg);\n  -moz-transform: rotate(2deg);\n  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }\n\n.polaroid-card > .polaroid-img {\n  height: 100%;\n  margin-bottom: 4%; }\n\n.polaroid-img {\n  display: block;\n  width: 92%;\n  height: 92%;\n  margin-top: 0 !important;\n  margin-left: auto;\n  margin-right: auto;\n  transform: rotate(2deg);\n  -webkit-transform: translateY(4%);\n  -moz-transform: translateY(4%); }\n\n.polaroid-text-area {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  min-height: 64px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wb2xhcm9pZC9DOlxcVXNlcnNcXE1pY2hlbFxcRG9jdW1lbnRzXFxXb3Jrc3BhY2VcXG1hcnlzcnVieS9zcmNcXGFwcFxcY29tcG9uZW50c1xccG9sYXJvaWRcXHBvbGFyb2lkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLHVCQUF1QjtFQUN2QiwrQkFBK0I7RUFDL0IsNEJBQTRCO0VBQzVCLHdDQUFvQyxFQUFBOztBQUd4QztFQUNJLFlBQVk7RUFDWixpQkFBaUIsRUFBQTs7QUFHckI7RUFDSSxjQUFjO0VBQ2QsVUFBVTtFQUNWLFdBQVc7RUFDWCx3QkFBd0I7RUFDeEIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsaUNBQWlDO0VBQ2xDLDhCQUE4QixFQUFBOztBQUdqQztFQUNJLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLGdCQUFnQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wb2xhcm9pZC9wb2xhcm9pZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wb2xhcm9pZC1jYXJkIHtcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDA7XHJcbiAgICBtYXJnaW46IDI0cHggMTZweDtcclxuICAgIG1heC13aWR0aDogNTAwcHg7XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgyZGVnKTtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoMmRlZyk7XHJcbiAgICAtbW96LXRyYW5zZm9ybTogcm90YXRlKDJkZWcpO1xyXG4gICAgYm94LXNoYWRvdzogMCAzcHggNnB4IHJnYmEoMCwwLDAsLjUpO1xyXG59XHJcblxyXG4ucG9sYXJvaWQtY2FyZD4ucG9sYXJvaWQtaW1nIHtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIG1hcmdpbi1ib3R0b206IDQlO1xyXG59XHJcblxyXG4ucG9sYXJvaWQtaW1nIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgd2lkdGg6IDkyJTtcclxuICAgIGhlaWdodDogOTIlO1xyXG4gICAgbWFyZ2luLXRvcDogMCAhaW1wb3J0YW50O1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgyZGVnKTtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDQlKTtcclxuICAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoNCUpO1xyXG59XHJcblxyXG4ucG9sYXJvaWQtdGV4dC1hcmVhIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBtaW4taGVpZ2h0OiA2NHB4O1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/polaroid/polaroid.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/components/polaroid/polaroid.component.ts ***!
+  \***********************************************************/
+/*! exports provided: PolaroidComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PolaroidComponent", function() { return PolaroidComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/language.service */ "./src/app/services/language.service.ts");
+/* harmony import */ var src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/datatypes/language */ "./src/app/datatypes/language.ts");
+
+
+
+
+var PolaroidComponent = /** @class */ (function () {
+    function PolaroidComponent(languageService) {
+        this.languageService = languageService;
+    }
+    PolaroidComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.languageService.subscribe(function (language) { return _this.languageChanged(language); });
+        this.languageChanged(this.languageService.language);
+    };
+    PolaroidComponent.prototype.languageChanged = function (language) {
+        if (language === src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__["Language"].ENGLISH) {
+            this.text = this.textEn;
+        }
+        else {
+            this.text = this.textDe;
+        }
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidComponent.prototype, "textDe", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidComponent.prototype, "textEn", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidComponent.prototype, "imgPath", void 0);
+    PolaroidComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-polaroid',
+            template: __webpack_require__(/*! ./polaroid.component.html */ "./src/app/components/polaroid/polaroid.component.html"),
+            styles: [__webpack_require__(/*! ./polaroid.component.scss */ "./src/app/components/polaroid/polaroid.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__["LanguageService"]])
+    ], PolaroidComponent);
+    return PolaroidComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/datatypes/contact.ts":
 /*!**************************************!*\
   !*** ./src/app/datatypes/contact.ts ***!
@@ -7322,7 +7409,7 @@ var ContactComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-dog-cover \r\n    [name]=name\r\n    birthdate='13.11.2013'\r\n    imgPath='assets/ella/ella-profil.JPG'\r\n    descriptionDe='Dieser Text beschreibt Ella.'\r\n    descriptionEn='This text describes Ella.'>\r\n</app-dog-cover>\r\n\r\n<app-pedigree-card\r\n    [name]=name\r\n    dad='Haldane World Traveller'\r\n    mom='Wheaten My Love Nice To See You'\r\n    daddad='Mil Mear Geragold Cowboy Up'\r\n    dadmom='Geragold Relax at Haldane'\r\n    momdad=\"Choroschie Drusja's Harry Callahan\"\r\n    mommom='Sophisticated Wheaten Charming-Girl'>\r\n</app-pedigree-card>"
+module.exports = "<h1>{{name}}</h1>\r\n\r\n<app-polaroid \r\n    imgPath='assets/ella/ella-profil.JPG'\r\n    textDe='Geb. 13.11.2013'\r\n    textEn='Born 13.11.2013'>\r\n</app-polaroid>\r\n\r\n<app-pedigree-card\r\n    [name]=name\r\n    dad='Haldane World Traveller'\r\n    mom='Wheaten My Love Nice To See You'\r\n    daddad='Mil Mear Geragold Cowboy Up'\r\n    dadmom='Geragold Relax at Haldane'\r\n    momdad=\"Choroschie Drusja's Harry Callahan\"\r\n    mommom='Sophisticated Wheaten Charming-Girl'>\r\n</app-pedigree-card>"
 
 /***/ }),
 
@@ -7618,7 +7705,7 @@ var ImpressumComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-dog-cover \r\n    [name]=name\r\n    birthdate='24.09.2015'\r\n    imgPath='assets/james/james-profil.JPG'\r\n    descriptionDe='Dieser Text beschreibt James.'\r\n    descriptionEn='This text describes James.'>\r\n</app-dog-cover>\r\n\r\n<app-list-items-card\r\n    titleDe='Titel'\r\n    titleEn='Titles'\r\n    [listItemsDe]=titleListDe\r\n    [listItemsEn]=titleListEn>\r\n</app-list-items-card>\r\n\r\n<app-list-items-card\r\n    titleDe='Steckbrief'\r\n    titleEn='Fact Sheet'\r\n    [listItemsDe]=factsDe\r\n    [listItemsEn]=factsEn>\r\n</app-list-items-card>\r\n\r\n<app-pedigree-card\r\n    [name]=name\r\n    dad=\"Ballyhara's Kingsly\"\r\n    mom=\"Ballyhara's Treasure from Trá Lí\"\r\n    daddad=\"Wheaten Volunteer’s Ivanhoe\"\r\n    dadmom=\"Ballyhara's Diorbhall-Ita\"\r\n    momdad=\"Goforit Danny de Vito\"\r\n    mommom=\"Ballyhara's Jewel of Tara\">\r\n</app-pedigree-card>\r\n"
+module.exports = "<h1>{{name}}</h1>\r\n\r\n<app-polaroid \r\n    imgPath='assets/james/james-profil.JPG'\r\n    textDe='Geb. 24.09.2015'\r\n    textEn='Born 24.09.2015'>\r\n</app-polaroid>\r\n\r\n<app-list-items-card\r\n    titleDe='Titel'\r\n    titleEn='Titles'\r\n    [listItemsDe]=titleListDe\r\n    [listItemsEn]=titleListEn>\r\n</app-list-items-card>\r\n\r\n<app-list-items-card\r\n    titleDe='Steckbrief'\r\n    titleEn='Fact Sheet'\r\n    [listItemsDe]=factsDe\r\n    [listItemsEn]=factsEn>\r\n</app-list-items-card>\r\n\r\n<app-pedigree-card\r\n    [name]=name\r\n    dad=\"Ballyhara's Kingsly\"\r\n    mom=\"Ballyhara's Treasure from Trá Lí\"\r\n    daddad=\"Wheaten Volunteer’s Ivanhoe\"\r\n    dadmom=\"Ballyhara's Diorbhall-Ita\"\r\n    momdad=\"Goforit Danny de Vito\"\r\n    mommom=\"Ballyhara's Jewel of Tara\">\r\n</app-pedigree-card>\r\n"
 
 /***/ }),
 
