@@ -47,6 +47,18 @@
   height: 48px;
 }
 
+.menu-seperator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.upper-menu {
+  display: flex;
+  flex-direction: column;
+}
+
 .sidenav-button {
   background-color: transparent;
   text-align: left;
@@ -90,6 +102,7 @@
 .drawer-content {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .expansion-panel-content {

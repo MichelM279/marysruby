@@ -28,6 +28,9 @@ export class MenuComponent implements OnInit {
   contact: String;
   contactDe = 'Kontakt';
   contactEn = 'Contact Us';
+  impressum: String;
+  impressumDe = 'Impressum';
+  impressumEn = 'Legal Notice';
 
   constructor(private router: Router, private languageService: LanguageService) { }
 
@@ -95,12 +98,14 @@ export class MenuComponent implements OnInit {
       this.dogs = this.dogsEn;
       this.puppies = this.puppiesEn;
       this.contact = this.contactEn;
+      this.impressum = this.impressumEn;
     } else {
       this.homepage = this.homepageDe;
       this.about = this.aboutDe;
       this.dogs = this.dogsDe;
       this.puppies = this.puppiesDe;
       this.contact = this.contactDe;
+      this.impressum = this.impressumDe;
     }
   }
 
