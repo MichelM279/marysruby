@@ -1,7 +1,17 @@
 <app-dog-cover 
-    name="Ballyhara's Alroy Adare 'James'"
+    [name]=name
     birthdate='24.09.2015'
     imgPath='assets/james/james-profil.JPG'
     descriptionDe='Dieser Text beschreibt James.'
     descriptionEn='This text describes James.'>
 </app-dog-cover>
+
+<app-pedigree-card
+    [name]=name
+    dad="Ballyhara's Kingsly"
+    mom="Ballyhara's Treasure from Trá Lí"
+    daddad="Wheaten Volunteer’s Ivanhoe"
+    dadmom="Ballyhara's Diorbhall-Ita"
+    momdad="Goforit Danny de Vito"
+    mommom="Ballyhara's Jewel of Tara">
+</app-pedigree-card>

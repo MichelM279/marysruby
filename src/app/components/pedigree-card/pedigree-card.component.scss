@@ -1,0 +1,17 @@
+.my-table{
+    width: 100%;
+    border: 1px solid #595959;
+    border-collapse: collapse;
+}
+
+table.my-table td, table.my-table th {
+    border: 1px solid #595959;
+    border-collapse: collapse;
+    padding: 3px;
+    width: 60px;
+    height: 40px;
+}
+
+table.my-table th {
+    background: #f0e6cc;
+}

@@ -3,7 +3,7 @@
 @import "theme-palette";
 
 // hue. Available color palettes: https://material.io/design/color/
-$app-primary: mat-palette($mat-gray, $default: 700, $lighter: 300);
+$app-primary: mat-palette($mat-gray, $default: 700, $lighter: 300, $darker: 900);
 $app-accent: mat-palette($ruby-theme-accent, $lighter: 400);
 $app-warn: mat-palette($mat-red);
 
@@ -14,8 +14,8 @@ $accent: map-get($app-theme, accent);
 $warn: map-get($app-theme, warn);
 
 $background-colour: mat-color($primary, 50);
-$header-bar-colour: mat-color($accent, lighter);
-$header-text-colour: mat-color($accent, lighter-contrast);
+$header-bar-colour: mat-color($accent, darker);
+$header-text-colour: mat-color($accent, darker-contrast);
 $menu-bar-colour: mat-color($primary, lighter);
 $menu-text-colour: mat-color($primary, lighter-contrast);
 $menu-item-hover: mat-color($accent);

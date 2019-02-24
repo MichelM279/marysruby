@@ -32,6 +32,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { DogCoverComponent } from './components/dog-cover/dog-cover.component';
 import { NewsCardComponent } from './components/news-card/news-card.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { PedigreeCardComponent } from './components/pedigree-card/pedigree-card.component';
+import { ListItemsCardComponent } from './components/list-items-card/list-items-card.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -64,7 +66,9 @@ const routes: Routes = [
     ImpressumComponent,
     DogCoverComponent,
     NewsCardComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    PedigreeCardComponent,
+    ListItemsCardComponent
   ],
   imports: [
     BrowserAnimationsModule,

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JamesComponent implements OnInit {
 
+  // tslint:disable-next-line:quotemark
+  name = "Ballyhara's Alroy Adare 'James'";
+
   constructor() { }
 
   ngOnInit() {

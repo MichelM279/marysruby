@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EllaComponent implements OnInit {
 
+  // tslint:disable-next-line:quotemark
+  name = "Sophisticated Wheaten Noelle 'Ella'";
+
   constructor() { }
 
   ngOnInit() {

@@ -1,7 +1,17 @@
 <app-dog-cover 
-    name="Sophisticated Wheaten Noelle 'Ella'"
+    [name]=name
     birthdate='13.11.2013'
     imgPath='assets/ella/ella-profil.JPG'
     descriptionDe='Dieser Text beschreibt Ella.'
     descriptionEn='This text describes Ella.'>
 </app-dog-cover>
+
+<app-pedigree-card
+    [name]=name
+    dad="Ella papa"
+    mom="Ella mama"
+    daddad="opi"
+    dadmom="opi"
+    momdad="opa"
+    mommom="oma">
+</app-pedigree-card>
