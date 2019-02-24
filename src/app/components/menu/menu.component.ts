@@ -60,8 +60,8 @@ export class MenuComponent implements OnInit {
     this.closeDrawer();
   }
 
-  navLitters() {
-    this.router.navigateByUrl('/litters');
+  navLittersA() {
+    this.router.navigateByUrl('/a');
     this.closeDrawer();
   }
 
