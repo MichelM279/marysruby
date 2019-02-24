@@ -15,7 +15,14 @@ export class ListItemsCardComponent implements OnInit {
   @Input()
   private titleEn: String;
 
+  @Input()
+  listItemsDe: String[];
+
+  @Input()
+  listItemsEn: String[];
+
   title: String;
+  listItems: String[];
 
   constructor(private languageService: LanguageService) { }
 
@@ -27,8 +34,10 @@ export class ListItemsCardComponent implements OnInit {
   private languageChanged(language: Language) {
     if (language === Language.ENGLISH) {
       this.title = this.titleEn;
+      this.listItems = this.listItemsEn;
     } else {
       this.title = this.titleDe;
+      this.listItems = this.listItemsDe;
     }
   }
 
