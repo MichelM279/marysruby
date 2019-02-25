@@ -10682,6 +10682,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pedigree_card_pedigree_card_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/pedigree-card/pedigree-card.component */ "./src/app/components/pedigree-card/pedigree-card.component.ts");
 /* harmony import */ var _components_list_items_card_list_items_card_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/list-items-card/list-items-card.component */ "./src/app/components/list-items-card/list-items-card.component.ts");
 /* harmony import */ var _components_polaroid_polaroid_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/polaroid/polaroid.component */ "./src/app/components/polaroid/polaroid.component.ts");
+/* harmony import */ var _components_polaroid_collage_polaroid_collage_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/polaroid-collage/polaroid-collage.component */ "./src/app/components/polaroid-collage/polaroid-collage.component.ts");
+/* harmony import */ var _components_post_it_post_it_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/post-it/post-it.component */ "./src/app/components/post-it/post-it.component.ts");
 
 
 
@@ -10701,6 +10703,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Components
+
+
 
 
 
@@ -10742,7 +10746,9 @@ var AppModule = /** @class */ (function () {
                 _components_contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_21__["ContactFormComponent"],
                 _components_pedigree_card_pedigree_card_component__WEBPACK_IMPORTED_MODULE_22__["PedigreeCardComponent"],
                 _components_list_items_card_list_items_card_component__WEBPACK_IMPORTED_MODULE_23__["ListItemsCardComponent"],
-                _components_polaroid_polaroid_component__WEBPACK_IMPORTED_MODULE_24__["PolaroidComponent"]
+                _components_polaroid_polaroid_component__WEBPACK_IMPORTED_MODULE_24__["PolaroidComponent"],
+                _components_polaroid_collage_polaroid_collage_component__WEBPACK_IMPORTED_MODULE_25__["PolaroidCollageComponent"],
+                _components_post_it_post_it_component__WEBPACK_IMPORTED_MODULE_26__["PostItComponent"]
             ],
             imports: [
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"],
@@ -11493,6 +11499,179 @@ var PedigreeCardComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/polaroid-collage/polaroid-collage.component.html":
+/*!*****************************************************************************!*\
+  !*** ./src/app/components/polaroid-collage/polaroid-collage.component.html ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngIf='titleDe && titleEn' class='post-it-wrapper'>\n  <app-post-it [textDe]=titleDe [textEn]=titleEn></app-post-it>\n</div>\n\n<div class='polaroid-collage-wrapper'>\n\n  <div class='row-of-two' *ngIf='imgPath1 && imgPath2'>\n\n    <div class='polaroid-wrapper'>\n      <mat-card class='polaroid-card card-1' *ngIf='imgPath1' (click)='routeNav1()'>\n        <img mat-card-image src='{{imgPath1}}' class='polaroid-img img-1'>\n        <mat-card-content class='polaroid-text-area area-1'>\n          <p class='polaroid-text text-1'>\n            {{text1}}\n          </p>\n        </mat-card-content>\n      </mat-card>\n    </div>\n\n    <div class='polaroid-wrapper'>\n      <mat-card class='polaroid-card card-2' *ngIf='imgPath2' (click)='routeNav2()'>\n        <img mat-card-image src='{{imgPath2}}' class='polaroid-img img-2'>\n        <mat-card-content class='polaroid-text-area area-2'>\n          <p class='polaroid-text text-2'>\n            {{text2}}\n          </p>\n        </mat-card-content>\n      </mat-card>\n    </div>\n\n  </div>\n\n  <div class='row-of-two' *ngIf='imgPath3 && imgPath4'>\n\n    <div class='polaroid-wrapper'>\n      <mat-card class='polaroid-card card-3' *ngIf='imgPath3' (click)='routeNav3()'>\n        <img mat-card-image src='{{imgPath3}}' class='polaroid-img img-3'>\n        <mat-card-content class='polaroid-text-area area-3'>\n          <p class='polaroid-text text-3'>\n            {{text3}}\n          </p>\n        </mat-card-content>\n      </mat-card>\n    </div>\n\n    <div class='polaroid-wrapper'>\n      <mat-card class='polaroid-card card-4' *ngIf='imgPath4' (click)='routeNav4()'>\n        <img mat-card-image src='{{imgPath4}}' class='polaroid-img img-4'>\n        <mat-card-content class='polaroid-text-area area-4'>\n          <p class='polaroid-text text-4'>\n            {{text4}}\n          </p>\n        </mat-card-content>\n      </mat-card>\n    </div>\n\n  </div>\n\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/polaroid-collage/polaroid-collage.component.scss":
+/*!*****************************************************************************!*\
+  !*** ./src/app/components/polaroid-collage/polaroid-collage.component.scss ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".polaroid-card {\n  border: none;\n  border-radius: 0;\n  margin: 24px 16px;\n  max-width: 200px;\n  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);\n  position: relative;\n  display: block;\n  overflow: hidden; }\n  .polaroid-card:hover {\n    transform: scale(1.25);\n    -webkit-transform: scale(1.25);\n    -moz-transform: scale(1.25);\n    position: relative;\n    z-index: 5; }\n  .card-1 {\n  transform: rotate(3deg);\n  -webkit-transform: rotate(3deg);\n  -moz-transform: rotate(3deg);\n  margin-right: -12px;\n  margin-bottom: -12px;\n  z-index: 3; }\n  .card-2 {\n  transform: rotate(-13deg);\n  -webkit-transform: rotate(-13deg);\n  -moz-transform: rotate(-13deg);\n  margin-left: -12px;\n  margin-bottom: -12px;\n  z-index: 2; }\n  .card-3 {\n  transform: rotate(-10deg);\n  -webkit-transform: rotate(-10deg);\n  -moz-transform: rotate(-10deg);\n  margin-right: -12px;\n  margin-top: -12px;\n  z-index: 4; }\n  .card-4 {\n  transform: rotate(6deg);\n  -webkit-transform: rotate(6deg);\n  -moz-transform: rotate(6deg);\n  margin-left: -12px;\n  margin-top: -12px;\n  z-index: 1; }\n  .polaroid-card > .polaroid-img {\n  height: 100%;\n  margin-bottom: 4%; }\n  .polaroid-img {\n  display: block;\n  width: 92%;\n  height: 92%;\n  margin-top: 0 !important;\n  margin-left: auto;\n  margin-right: auto;\n  transform: rotate(2deg);\n  -webkit-transform: translateY(4%);\n  -moz-transform: translateY(4%); }\n  .polaroid-text-area {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  min-height: 42px; }\n  .polaroid-collage-wrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 48px; }\n  .polaroid-wrapper {\n  display: block; }\n  .row-of-two {\n  display: flex;\n  flex-direction: row;\n  overflow: visible; }\n  .post-it-wrapper {\n  display: flex;\n  width: 100%;\n  justify-content: center; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wb2xhcm9pZC1jb2xsYWdlL0M6XFxVc2Vyc1xcTWljaGVsXFxEb2N1bWVudHNcXFdvcmtzcGFjZVxcbWFyeXNydWJ5L3NyY1xcYXBwXFxjb21wb25lbnRzXFxwb2xhcm9pZC1jb2xsYWdlXFxwb2xhcm9pZC1jb2xsYWdlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBO0VBQ0ksWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLHdDQUFvQztFQUNwQyxrQkFBa0I7RUFDbEIsY0FBYztFQUNkLGdCQUFnQixFQUFBO0VBUnBCO0lBVVEsc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QiwyQkFBMkI7SUFDM0Isa0JBQWtCO0lBQ2xCLFVBQVUsRUFBQTtFQUlsQjtFQUNJLHVCQUE2QjtFQUM3QiwrQkFBcUM7RUFDckMsNEJBQWtDO0VBQ2xDLG1CQUFtQjtFQUNuQixvQkFBb0I7RUFDcEIsVUFBVSxFQUFBO0VBRWQ7RUFDSSx5QkFBNkI7RUFDN0IsaUNBQXFDO0VBQ3JDLDhCQUFrQztFQUNsQyxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFVBQVUsRUFBQTtFQUVkO0VBQ0kseUJBQTZCO0VBQzdCLGlDQUFxQztFQUNyQyw4QkFBa0M7RUFDbEMsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQixVQUFVLEVBQUE7RUFFZDtFQUNJLHVCQUE2QjtFQUM3QiwrQkFBcUM7RUFDckMsNEJBQWtDO0VBQ2xDLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsVUFBVSxFQUFBO0VBR2Q7RUFDSSxZQUFZO0VBQ1osaUJBQWlCLEVBQUE7RUFHckI7RUFDSSxjQUFjO0VBQ2QsVUFBVTtFQUNWLFdBQVc7RUFDWCx3QkFBd0I7RUFDeEIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsaUNBQWlDO0VBQ2xDLDhCQUE4QixFQUFBO0VBR2pDO0VBQ0ksYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsZ0JBQWdCLEVBQUE7RUFHcEI7RUFDSSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQixtQkFBbUIsRUFBQTtFQUd2QjtFQUNJLGNBQWMsRUFBQTtFQUdsQjtFQUNJLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsaUJBQWlCLEVBQUE7RUFHckI7RUFDSSxhQUFhO0VBQ2IsV0FBVztFQUNYLHVCQUF1QixFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wb2xhcm9pZC1jb2xsYWdlL3BvbGFyb2lkLWNvbGxhZ2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIkcm90YXRpb24xOiAzZGVnO1xyXG4kcm90YXRpb24yOiAtMTNkZWc7XHJcbiRyb3RhdGlvbjM6IC0xMGRlZztcclxuJHJvdGF0aW9uNDogNmRlZztcclxuXHJcbi5wb2xhcm9pZC1jYXJkIHtcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDA7XHJcbiAgICBtYXJnaW46IDI0cHggMTZweDtcclxuICAgIG1heC13aWR0aDogMjAwcHg7XHJcbiAgICBib3gtc2hhZG93OiAwIDNweCA2cHggcmdiYSgwLDAsMCwuNSk7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICAmOmhvdmVyIHtcclxuICAgICAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMjUpO1xyXG4gICAgICAgIC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgxLjI1KTtcclxuICAgICAgICAtbW96LXRyYW5zZm9ybTogc2NhbGUoMS4yNSk7XHJcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgICAgIHotaW5kZXg6IDU7XHJcbiAgICB9XHJcbn1cclxuXHJcbi5jYXJkLTEge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoJHJvdGF0aW9uMSk7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKCRyb3RhdGlvbjEpO1xyXG4gICAgLW1vei10cmFuc2Zvcm06IHJvdGF0ZSgkcm90YXRpb24xKTtcclxuICAgIG1hcmdpbi1yaWdodDogLTEycHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAtMTJweDtcclxuICAgIHotaW5kZXg6IDM7XHJcbn1cclxuLmNhcmQtMiB7XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgkcm90YXRpb24yKTtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoJHJvdGF0aW9uMik7XHJcbiAgICAtbW96LXRyYW5zZm9ybTogcm90YXRlKCRyb3RhdGlvbjIpO1xyXG4gICAgbWFyZ2luLWxlZnQ6IC0xMnB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogLTEycHg7XHJcbiAgICB6LWluZGV4OiAyO1xyXG59XHJcbi5jYXJkLTMge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoJHJvdGF0aW9uMyk7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKCRyb3RhdGlvbjMpO1xyXG4gICAgLW1vei10cmFuc2Zvcm06IHJvdGF0ZSgkcm90YXRpb24zKTtcclxuICAgIG1hcmdpbi1yaWdodDogLTEycHg7XHJcbiAgICBtYXJnaW4tdG9wOiAtMTJweDtcclxuICAgIHotaW5kZXg6IDQ7XHJcbn1cclxuLmNhcmQtNCB7XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgkcm90YXRpb240KTtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoJHJvdGF0aW9uNCk7XHJcbiAgICAtbW96LXRyYW5zZm9ybTogcm90YXRlKCRyb3RhdGlvbjQpO1xyXG4gICAgbWFyZ2luLWxlZnQ6IC0xMnB4O1xyXG4gICAgbWFyZ2luLXRvcDogLTEycHg7XHJcbiAgICB6LWluZGV4OiAxO1xyXG59XHJcblxyXG4ucG9sYXJvaWQtY2FyZD4ucG9sYXJvaWQtaW1nIHtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIG1hcmdpbi1ib3R0b206IDQlO1xyXG59XHJcblxyXG4ucG9sYXJvaWQtaW1nIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgd2lkdGg6IDkyJTtcclxuICAgIGhlaWdodDogOTIlO1xyXG4gICAgbWFyZ2luLXRvcDogMCAhaW1wb3J0YW50O1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgyZGVnKTtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDQlKTtcclxuICAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoNCUpO1xyXG59XHJcblxyXG4ucG9sYXJvaWQtdGV4dC1hcmVhIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBtaW4taGVpZ2h0OiA0MnB4O1xyXG59XHJcblxyXG4ucG9sYXJvaWQtY29sbGFnZS13cmFwcGVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uOyBcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBtYXJnaW4tYm90dG9tOiA0OHB4O1xyXG59XHJcblxyXG4ucG9sYXJvaWQtd3JhcHBlciB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5cclxuLnJvdy1vZi10d28ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcbiAgICBvdmVyZmxvdzogdmlzaWJsZTtcclxufVxyXG5cclxuLnBvc3QtaXQtd3JhcHBlciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/polaroid-collage/polaroid-collage.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/components/polaroid-collage/polaroid-collage.component.ts ***!
+  \***************************************************************************/
+/*! exports provided: PolaroidCollageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PolaroidCollageComponent", function() { return PolaroidCollageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/language.service */ "./src/app/services/language.service.ts");
+/* harmony import */ var src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/datatypes/language */ "./src/app/datatypes/language.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+
+var PolaroidCollageComponent = /** @class */ (function () {
+    function PolaroidCollageComponent(router, languageService) {
+        this.router = router;
+        this.languageService = languageService;
+    }
+    PolaroidCollageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.languageService.subscribe(function (language) { return _this.languageChanged(language); });
+        this.languageChanged(this.languageService.language);
+    };
+    PolaroidCollageComponent.prototype.languageChanged = function (language) {
+        if (language === src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__["Language"].ENGLISH) {
+            this.text1 = this.text1En;
+            this.text2 = this.text2En;
+            this.text3 = this.text3En;
+            this.text4 = this.text4En;
+        }
+        else {
+            this.text1 = this.text1De;
+            this.text2 = this.text2De;
+            this.text3 = this.text3De;
+            this.text4 = this.text4De;
+        }
+    };
+    PolaroidCollageComponent.prototype.routeNav1 = function () {
+        if (this.nav1) {
+            this.router.navigateByUrl(this.nav1);
+        }
+    };
+    PolaroidCollageComponent.prototype.routeNav2 = function () {
+        if (this.nav2) {
+            this.router.navigateByUrl(this.nav2);
+        }
+    };
+    PolaroidCollageComponent.prototype.routeNav3 = function () {
+        if (this.nav3) {
+            this.router.navigateByUrl(this.nav3);
+        }
+    };
+    PolaroidCollageComponent.prototype.routeNav4 = function () {
+        if (this.nav4) {
+            this.router.navigateByUrl(this.nav4);
+        }
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "titleDe", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "titleEn", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "text1De", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "text1En", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "text2De", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "text2En", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "text3De", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "text3En", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "text4De", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "text4En", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "imgPath1", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "imgPath2", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "imgPath3", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "imgPath4", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "nav1", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "nav2", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "nav3", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PolaroidCollageComponent.prototype, "nav4", void 0);
+    PolaroidCollageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-polaroid-collage',
+            template: __webpack_require__(/*! ./polaroid-collage.component.html */ "./src/app/components/polaroid-collage/polaroid-collage.component.html"),
+            styles: [__webpack_require__(/*! ./polaroid-collage.component.scss */ "./src/app/components/polaroid-collage/polaroid-collage.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__["LanguageService"]])
+    ], PolaroidCollageComponent);
+    return PolaroidCollageComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/polaroid/polaroid.component.html":
 /*!*************************************************************!*\
   !*** ./src/app/components/polaroid/polaroid.component.html ***!
@@ -11571,6 +11750,86 @@ var PolaroidComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__["LanguageService"]])
     ], PolaroidComponent);
     return PolaroidComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/post-it/post-it.component.html":
+/*!***********************************************************!*\
+  !*** ./src/app/components/post-it/post-it.component.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-card class='postit'>\n    <p>\n      {{text}}\n    </p>\n</mat-card>"
+
+/***/ }),
+
+/***/ "./src/app/components/post-it/post-it.component.scss":
+/*!***********************************************************!*\
+  !*** ./src/app/components/post-it/post-it.component.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "@import url(\"https://fonts.googleapis.com/css?family=Reenie+Beanie\");\n.postit {\n  text-align: center;\n  width: 275px;\n  margin: 25px 25px 0;\n  padding-top: 20px;\n  position: relative;\n  border: 1px solid #e8e8e8;\n  border-top: 6px solid #fdfd86;\n  font-family: \"Reenie Beanie\", cursive;\n  font-size: 40px;\n  border-bottom-right-radius: 60px 5px;\n  display: inline-block;\n  background: #ffff88;\n  /* Old browsers */\n  /* FF3.6+ */\n  /* Chrome,Safari4+ */\n  /* Chrome10+,Safari5.1+ */\n  /* Opera 11.10+ */\n  /* IE10+ */\n  background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);\n  /* W3C */\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 );\n  /* IE6-9 fallback on horizontal gradient */ }\n.postit:after {\n  content: \"\";\n  position: absolute;\n  z-index: -1;\n  right: -0px;\n  bottom: 20px;\n  width: 200px;\n  height: 25px;\n  background: rgba(0, 0, 0, 0.2);\n  box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.4);\n  -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);\n  transform: matrix(-1, -0.1, 0, 1, 0, 0); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wb3N0LWl0L0M6XFxVc2Vyc1xcTWljaGVsXFxEb2N1bWVudHNcXFdvcmtzcGFjZVxcbWFyeXNydWJ5L3NyY1xcYXBwXFxjb21wb25lbnRzXFxwb3N0LWl0XFxwb3N0LWl0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG9FQUFZO0FBRVo7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6Qiw2QkFBNkI7RUFDN0IscUNBQXFDO0VBQ3JDLGVBQWU7RUFDZixvQ0FBb0M7RUFDcEMscUJBQXFCO0VBQ3JCLG1CQUFtQjtFQUFFLGlCQUFBO0VBQzBFLFdBQUE7RUFTNUYsb0JBQUE7RUFPQSx5QkFBQTtFQUMwRixpQkFBQTtFQUNDLFVBQUE7RUFDOUYsd0ZBQXdGO0VBQUUsUUFBQTtFQUMxRixtSEFBbUg7RUFBRSwwQ0FBQSxFQUEyQztBQUdsSztFQUNFLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFdBQVc7RUFDWCxZQUFZO0VBQ1osWUFBWTtFQUNaLFlBQVk7RUFDWiw4QkFBOEI7RUFDOUIsMkNBQTJDO0VBRTNDLCtDQUErQztFQUcvQyx1Q0FBdUMsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcG9zdC1pdC9wb3N0LWl0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1SZWVuaWUrQmVhbmllJyk7XHJcblxyXG4ucG9zdGl0IHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgd2lkdGg6IDI3NXB4O1xyXG4gIG1hcmdpbjogMjVweCAyNXB4IDA7XHJcbiAgcGFkZGluZy10b3A6IDIwcHg7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkICNlOGU4ZTg7XHJcbiAgYm9yZGVyLXRvcDogNnB4IHNvbGlkICNmZGZkODY7XHJcbiAgZm9udC1mYW1pbHk6IFwiUmVlbmllIEJlYW5pZVwiLCBjdXJzaXZlO1xyXG4gIGZvbnQtc2l6ZTogNDBweDtcclxuICBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogNjBweCA1cHg7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGJhY2tncm91bmQ6ICNmZmZmODg7IC8qIE9sZCBicm93c2VycyAqL1xyXG4gIGJhY2tncm91bmQ6IC1tb3otbGluZWFyLWdyYWRpZW50KC00NWRlZywgI2ZmZmY4OCA4MSUsICNmZmZmODggODIlLCAjZmZmZjg4IDgyJSwgI2ZmZmZjNiAxMDAlKTsgLyogRkYzLjYrICovXHJcbiAgYmFja2dyb3VuZDogLXdlYmtpdC1ncmFkaWVudChcclxuICAgIGxpbmVhcixcclxuICAgIGxlZnQgdG9wLFxyXG4gICAgcmlnaHQgYm90dG9tLFxyXG4gICAgY29sb3Itc3RvcCg4MSUsICNmZmZmODgpLFxyXG4gICAgY29sb3Itc3RvcCg4MiUsICNmZmZmODgpLFxyXG4gICAgY29sb3Itc3RvcCg4MiUsICNmZmZmODgpLFxyXG4gICAgY29sb3Itc3RvcCgxMDAlLCAjZmZmZmM2KVxyXG4gICk7IC8qIENocm9tZSxTYWZhcmk0KyAqL1xyXG4gIGJhY2tncm91bmQ6IC13ZWJraXQtbGluZWFyLWdyYWRpZW50KFxyXG4gICAgLTQ1ZGVnLFxyXG4gICAgI2ZmZmY4OCA4MSUsXHJcbiAgICAjZmZmZjg4IDgyJSxcclxuICAgICNmZmZmODggODIlLFxyXG4gICAgI2ZmZmZjNiAxMDAlXHJcbiAgKTsgLyogQ2hyb21lMTArLFNhZmFyaTUuMSsgKi9cclxuICBiYWNrZ3JvdW5kOiAtby1saW5lYXItZ3JhZGllbnQoLTQ1ZGVnLCAjZmZmZjg4IDgxJSwgI2ZmZmY4OCA4MiUsICNmZmZmODggODIlLCAjZmZmZmM2IDEwMCUpOyAvKiBPcGVyYSAxMS4xMCsgKi9cclxuICBiYWNrZ3JvdW5kOiAtbXMtbGluZWFyLWdyYWRpZW50KC00NWRlZywgI2ZmZmY4OCA4MSUsICNmZmZmODggODIlLCAjZmZmZjg4IDgyJSwgI2ZmZmZjNiAxMDAlKTsgLyogSUUxMCsgKi9cclxuICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjZmZmZjg4IDgxJSwgI2ZmZmY4OCA4MiUsICNmZmZmODggODIlLCAjZmZmZmM2IDEwMCUpOyAvKiBXM0MgKi9cclxuICBmaWx0ZXI6IHByb2dpZDpEWEltYWdlVHJhbnNmb3JtLk1pY3Jvc29mdC5ncmFkaWVudCggc3RhcnRDb2xvcnN0cj0nI2ZmZmY4OCcsIGVuZENvbG9yc3RyPScjZmZmZmM2JyxHcmFkaWVudFR5cGU9MSApOyAvKiBJRTYtOSBmYWxsYmFjayBvbiBob3Jpem9udGFsIGdyYWRpZW50ICovXHJcbn1cclxuXHJcbi5wb3N0aXQ6YWZ0ZXIge1xyXG4gIGNvbnRlbnQ6IFwiXCI7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHotaW5kZXg6IC0xO1xyXG4gIHJpZ2h0OiAtMHB4O1xyXG4gIGJvdHRvbTogMjBweDtcclxuICB3aWR0aDogMjAwcHg7XHJcbiAgaGVpZ2h0OiAyNXB4O1xyXG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC4yKTtcclxuICBib3gtc2hhZG93OiAycHggMTVweCA1cHggcmdiYSgwLCAwLCAwLCAwLjQpO1xyXG4gIC1tb3otdHJhbnNmb3JtOiBtYXRyaXgoLTEsIC0wLjEsIDAsIDEsIDAsIDApO1xyXG4gIC13ZWJraXQtdHJhbnNmb3JtOiBtYXRyaXgoLTEsIC0wLjEsIDAsIDEsIDAsIDApO1xyXG4gIC1vLXRyYW5zZm9ybTogbWF0cml4KC0xLCAtMC4xLCAwLCAxLCAwLCAwKTtcclxuICAtbXMtdHJhbnNmb3JtOiBtYXRyaXgoLTEsIC0wLjEsIDAsIDEsIDAsIDApO1xyXG4gIHRyYW5zZm9ybTogbWF0cml4KC0xLCAtMC4xLCAwLCAxLCAwLCAwKTtcclxufVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/post-it/post-it.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/post-it/post-it.component.ts ***!
+  \*********************************************************/
+/*! exports provided: PostItComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostItComponent", function() { return PostItComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/language.service */ "./src/app/services/language.service.ts");
+/* harmony import */ var src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/datatypes/language */ "./src/app/datatypes/language.ts");
+
+
+
+
+var PostItComponent = /** @class */ (function () {
+    function PostItComponent(languageService) {
+        this.languageService = languageService;
+    }
+    PostItComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.languageService.subscribe(function (language) { return _this.languageChanged(language); });
+        this.languageChanged(this.languageService.language);
+    };
+    PostItComponent.prototype.languageChanged = function (language) {
+        if (language === src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__["Language"].ENGLISH) {
+            this.text = this.textEn;
+        }
+        else {
+            this.text = this.textDe;
+        }
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PostItComponent.prototype, "textDe", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PostItComponent.prototype, "textEn", void 0);
+    PostItComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-post-it',
+            template: __webpack_require__(/*! ./post-it.component.html */ "./src/app/components/post-it/post-it.component.html"),
+            styles: [__webpack_require__(/*! ./post-it.component.scss */ "./src/app/components/post-it/post-it.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__["LanguageService"]])
+    ], PostItComponent);
+    return PostItComponent;
 }());
 
 
@@ -11769,7 +12028,7 @@ var EllaComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>{{news}}</h1>\n\n<app-news-card\n  titleDe='Ellas Untersuchung'\n  titleEn=\"Ella's Doctors Appointment\"\n  date='15.02.2019'\n  textDe='Ellas Schwangerschaft ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-news-card\n  titleDe=\"Mary's Ruby offiziell gegründet!\"\n  titleEn=\"Mary's Ruby officially created!\"\n  date='18.08.2018'\n  textDe='Ellas Schwangerschaft ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-news-card\n  titleDe=\"Über Uns\"\n  titleEn='About Us'\n  date='25.02.2018'\n  textDe=\"Ein unwiderstehlicher Wheatenblick hat vor 15 Jahren Jahren dazu geführt, dass wir uns für diese außergewähnliche Rasse entschieden haben.\n  Bisher durften drei Wheaten bei uns einziehen.\n  Angefangen mit einem hereinschnuppern in die Welt der Showhunde, wurde das Ausstellen zu einer Leidenschaft.\n  Ella & James konnten ihre Pfoten nicht voneinander lassen und so entstand unser Kennel Mary's Ruby.\n  Unseren ersten Wurf erwarten wir gespannt im März 2019.\"\n  textEn=\"The irresistable sight of a Wheaten made us decide for this extraordinary race 15 years ago.\n  So far, we adopted three Wheaten Terriers.\n  Starting off with testing the waters of showdogs, we soon grew to passionate showdog leaders.\n  Ella & James couldn't keep their paws to themselves and so our Kennel Mary's Ruby was started.\n  Our first litter is expected in March 2019\">\n</app-news-card>\n"
+module.exports = "<h1>{{news}}</h1>\n\n<!--app-polaroid-collage\n  titleDe='Polaroid Haufen Beispiel'\n  titleEn='Polaroid Pile Example'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  imgPath3='assets/james/james-profil.JPG'\n  text3De='James2'\n  text3En='James2'\n  imgPath4='assets/ella/ella-profil.JPG'\n  text4De='Ella2'\n  text4En='Ella2'>\n</app-polaroid-collage-->\n\n<app-news-card\n  titleDe='Ellas Untersuchung'\n  titleEn=\"Ella's Doctors Appointment\"\n  date='15.02.2019'\n  textDe='Ellas Schwangerschaft ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-polaroid-collage\n  titleDe='Unsere Hunde'\n  titleEn='Our dogs'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe=\"Über Uns\"\n  titleEn='About Us'\n  date='25.02.2018'\n  textDe=\"Ein unwiderstehlicher Wheatenblick hat vor 15 Jahren Jahren dazu geführt, dass wir uns für diese außergewähnliche Rasse entschieden haben.\n  Bisher durften drei Wheaten bei uns einziehen.\n  Angefangen mit einem hereinschnuppern in die Welt der Showhunde, wurde das Ausstellen zu einer Leidenschaft.\n  Ella & James konnten ihre Pfoten nicht voneinander lassen und so entstand unser Kennel Mary's Ruby.\n  Unseren ersten Wurf erwarten wir gespannt im März 2019.\"\n  textEn=\"The irresistable sight of a Wheaten made us decide for this extraordinary race 15 years ago.\n  So far, we adopted three Wheaten Terriers.\n  Starting off with testing the waters of showdogs, we soon grew to passionate showdog leaders.\n  Ella & James couldn't keep their paws to themselves and so our Kennel Mary's Ruby was started.\n  Our first litter is expected in March 2019\">\n</app-news-card>\n\n<app-news-card\n  titleDe=\"Mary's Ruby offiziell gegründet!\"\n  titleEn=\"Mary's Ruby officially created!\"\n  date='18.08.2018'\n  textDe='Alle Formalien sind erfüllt, dass wir erfreulicherweise unsere Hundezucht starten können'\n  textEn=\"We are happy to announce that all formalities are met, such that we can officially begin our breeding home\">\n</app-news-card>\n"
 
 /***/ }),
 
