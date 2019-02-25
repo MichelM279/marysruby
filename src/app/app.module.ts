@@ -23,7 +23,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { EllaComponent } from './pages/ella/ella.component';
 import { JamesComponent } from './pages/james/james.component';
 import { AComponent } from './pages/litters/a/a.component';
-import { FotosComponent } from './pages/fotos/fotos.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -44,7 +43,6 @@ const routes: Routes = [
   { path: 'ella', component: EllaComponent },
   { path: 'james', component: JamesComponent },
   { path: 'a', component: AComponent },
-  { path: 'fotos', component: FotosComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'impressum', component: ImpressumComponent },
   { path: '**', component: NotFoundComponent}
@@ -59,7 +57,6 @@ const routes: Routes = [
     JamesComponent,
     AComponent,
     AboutComponent,
-    FotosComponent,
     NotFoundComponent,
     // Components
     HeaderComponent,

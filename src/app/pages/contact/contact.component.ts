@@ -10,8 +10,8 @@ import { Language } from 'src/app/datatypes/language';
 export class ContactComponent implements OnInit {
 
   title2: String;
-  private title2De = 'Weitere Kontaktmöglichkeiten';
-  private title2En = 'Further contact options';
+  private title2De = 'Kontaktmöglichkeiten'; // 'Weitere ...'
+  private title2En = 'Contact options'; // 'Further ...'
 
   title3: String;
   private title3De = 'Wo unsere Welpen ihre ersten Schritte machen';
