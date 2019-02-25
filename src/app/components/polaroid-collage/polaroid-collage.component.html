@@ -1,0 +1,59 @@
+<div *ngIf='titleDe && titleEn' class='post-it-wrapper'>
+  <app-post-it [textDe]=titleDe [textEn]=titleEn></app-post-it>
+</div>
+
+<div class='polaroid-collage-wrapper'>
+
+  <div class='row-of-two' *ngIf='imgPath1 && imgPath2'>
+
+    <div class='polaroid-wrapper'>
+      <mat-card class='polaroid-card card-1' *ngIf='imgPath1' (click)='routeNav1()'>
+        <img mat-card-image src='{{imgPath1}}' class='polaroid-img img-1'>
+        <mat-card-content class='polaroid-text-area area-1'>
+          <p class='polaroid-text text-1'>
+            {{text1}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class='polaroid-wrapper'>
+      <mat-card class='polaroid-card card-2' *ngIf='imgPath2' (click)='routeNav2()'>
+        <img mat-card-image src='{{imgPath2}}' class='polaroid-img img-2'>
+        <mat-card-content class='polaroid-text-area area-2'>
+          <p class='polaroid-text text-2'>
+            {{text2}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <div class='row-of-two' *ngIf='imgPath3 && imgPath4'>
+
+    <div class='polaroid-wrapper'>
+      <mat-card class='polaroid-card card-3' *ngIf='imgPath3' (click)='routeNav3()'>
+        <img mat-card-image src='{{imgPath3}}' class='polaroid-img img-3'>
+        <mat-card-content class='polaroid-text-area area-3'>
+          <p class='polaroid-text text-3'>
+            {{text3}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class='polaroid-wrapper'>
+      <mat-card class='polaroid-card card-4' *ngIf='imgPath4' (click)='routeNav4()'>
+        <img mat-card-image src='{{imgPath4}}' class='polaroid-img img-4'>
+        <mat-card-content class='polaroid-text-area area-4'>
+          <p class='polaroid-text text-4'>
+            {{text4}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+</div>

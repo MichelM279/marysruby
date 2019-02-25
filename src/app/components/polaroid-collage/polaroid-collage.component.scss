@@ -1,0 +1,102 @@
+$rotation1: 3deg;
+$rotation2: -13deg;
+$rotation3: -10deg;
+$rotation4: 6deg;
+
+.polaroid-card {
+    border: none;
+    border-radius: 0;
+    margin: 24px 16px;
+    max-width: 200px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.5);
+    position: relative;
+    display: block;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.card-1 {
+    transform: rotate($rotation1);
+    -webkit-transform: rotate($rotation1);
+    -moz-transform: rotate($rotation1);
+    margin-right: -12px;
+    margin-bottom: -12px;
+    z-index: 3;
+}
+.card-2 {
+    transform: rotate($rotation2);
+    -webkit-transform: rotate($rotation2);
+    -moz-transform: rotate($rotation2);
+    margin-left: -12px;
+    margin-bottom: -12px;
+    z-index: 2;
+}
+.card-3 {
+    transform: rotate($rotation3);
+    -webkit-transform: rotate($rotation3);
+    -moz-transform: rotate($rotation3);
+    margin-right: -12px;
+    margin-top: -12px;
+    z-index: 4;
+}
+.card-4 {
+    transform: rotate($rotation4);
+    -webkit-transform: rotate($rotation4);
+    -moz-transform: rotate($rotation4);
+    margin-left: -12px;
+    margin-top: -12px;
+    z-index: 1;
+}
+
+.polaroid-card>.polaroid-img {
+    height: 100%;
+    margin-bottom: 4%;
+}
+
+.polaroid-img {
+    display: block;
+    width: 92%;
+    height: 92%;
+    margin-top: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(2deg);
+    -webkit-transform: translateY(4%);
+   -moz-transform: translateY(4%);
+}
+
+.polaroid-text-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+}
+
+.polaroid-collage-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.polaroid-wrapper {
+    display: block;
+}
+
+.row-of-two {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+}
+
+.post-it-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

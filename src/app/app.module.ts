@@ -34,6 +34,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { PedigreeCardComponent } from './components/pedigree-card/pedigree-card.component';
 import { ListItemsCardComponent } from './components/list-items-card/list-items-card.component';
 import { PolaroidComponent } from './components/polaroid/polaroid.component';
+import { PolaroidCollageComponent } from './components/polaroid-collage/polaroid-collage.component';
+import { PostItComponent } from './components/post-it/post-it.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -65,7 +67,9 @@ const routes: Routes = [
     ContactFormComponent,
     PedigreeCardComponent,
     ListItemsCardComponent,
-    PolaroidComponent
+    PolaroidComponent,
+    PolaroidCollageComponent,
+    PostItComponent
   ],
   imports: [
     BrowserAnimationsModule,
