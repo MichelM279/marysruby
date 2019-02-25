@@ -54,7 +54,6 @@ const routes: Routes = [
     EllaComponent,
     JamesComponent,
     AComponent,
-    AboutComponent,
     NotFoundComponent,
     // Components
     HeaderComponent,
