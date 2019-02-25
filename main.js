@@ -11303,7 +11303,7 @@ var MenuComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\n  <mat-card-header>\n    <mat-card-title>{{title}}</mat-card-title>\n    <mat-card-subtitle>{{date}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      {{text}}\n    </p>\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card class='news-card'>\n  <mat-card-header>\n    <mat-card-title>{{title}}</mat-card-title>\n    <mat-card-subtitle>{{date}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      {{text}}\n    </p>\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
@@ -11314,7 +11314,7 @@ module.exports = "<mat-card>\n  <mat-card-header>\n    <mat-card-title>{{title}}
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbmV3cy1jYXJkL25ld3MtY2FyZC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = ".news-card {\n  max-width: 600px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uZXdzLWNhcmQvQzpcXFVzZXJzXFxNaWNoZWxcXERvY3VtZW50c1xcV29ya3NwYWNlXFxtYXJ5c3J1Ynkvc3JjXFxhcHBcXGNvbXBvbmVudHNcXG5ld3MtY2FyZFxcbmV3cy1jYXJkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZ0JBQWdCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL25ld3MtY2FyZC9uZXdzLWNhcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmV3cy1jYXJkIHtcclxuICAgIG1heC13aWR0aDogNjAwcHg7XHJcbn0iXX0= */"
 
 /***/ }),
 
