@@ -19,7 +19,6 @@ import {
   } from '@angular/material';
 // Pages
 import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
 import { EllaComponent } from './pages/ella/ella.component';
 import { JamesComponent } from './pages/james/james.component';
 import { AComponent } from './pages/litters/a/a.component';
@@ -39,7 +38,6 @@ import { PolaroidComponent } from './components/polaroid/polaroid.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
   { path: 'ella', component: EllaComponent },
   { path: 'james', component: JamesComponent },
   { path: 'a', component: AComponent },
