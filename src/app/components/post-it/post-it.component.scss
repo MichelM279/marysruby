@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import "../../../theme";
+
+$post-it-colour: mat-color($primary, 300);
+$post-it-corner: mat-color($primary, 500);
+$post-it-border: mat-color($primary, 400);
+$post-it-border-top: mat-color($primary, 300);
 
 .postit {
   text-align: center;
@@ -6,34 +11,58 @@
   margin: 25px 25px 0;
   padding-top: 20px;
   position: relative;
-  border: 1px solid #e8e8e8;
-  border-top: 6px solid #fdfd86;
+  border: 1px solid $post-it-border;
+  border-top: 6px solid $post-it-border-top;
   font-family: "Reenie Beanie", cursive;
   font-size: 40px;
   border-bottom-right-radius: 60px 5px;
   display: inline-block;
-  background: #ffff88; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+  background: $post-it-colour; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    $post-it-colour 81%,
+    $post-it-colour 82%,
+    $post-it-colour 82%,
+    $post-it-corner 100%
+  ); /* FF3.6+ */
   background: -webkit-gradient(
     linear,
     left top,
     right bottom,
-    color-stop(81%, #ffff88),
-    color-stop(82%, #ffff88),
-    color-stop(82%, #ffff88),
-    color-stop(100%, #ffffc6)
+    color-stop(81%, $post-it-colour),
+    color-stop(82%, $post-it-colour),
+    color-stop(82%, $post-it-colour),
+    color-stop(100%, $post-it-colour)
   ); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(
     -45deg,
-    #ffff88 81%,
-    #ffff88 82%,
-    #ffff88 82%,
-    #ffffc6 100%
+    $post-it-colour 81%,
+    $post-it-colour 82%,
+    $post-it-colour 82%,
+    $post-it-corner 100%
   ); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* IE10+ */
-  background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -o-linear-gradient(
+    -45deg,
+    $post-it-colour 81%,
+    $post-it-colour 82%,
+    $post-it-colour 82%,
+    $post-it-corner 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    -45deg,
+    $post-it-colour 81%,
+    $post-it-colour 82%,
+    $post-it-colour 82%,
+    $post-it-corner 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    135deg,
+    $post-it-colour 81%,
+    $post-it-colour 82%,
+    $post-it-colour 82%,
+    $post-it-corner 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$post-it-colour, endColorstr=$post-it-corner,GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .postit:after {

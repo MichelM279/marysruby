@@ -11,15 +11,15 @@ export class JamesComponent implements OnInit {
   name = "Ballyhara's Alroy Adare 'James'";
 
   titleListDe: String[] = [
-    'Deutscher Champion 2018',
-    'KfT Jugendchampion 2017',
-    'Luxemburg Champion 2017'
+    'Champion KfT',
+    'KfT Jugendchampion',
+    'Luxemburg Champion'
   ];
 
   titleListEn: String[] = [
-    'German Champion 2018',
-    'KfT Youth Champion 2017',
-    'Luxemburg Champion 2017'
+    'KfT Champion',
+    'KfT Youth Champion',
+    'Luxemburg Champion'
   ];
 
   factsDe: String[] = [
@@ -31,7 +31,7 @@ export class JamesComponent implements OnInit {
   ];
 
   factsEn: String[] = [
-    'Widerristhöhe 49cm',
+    'Height at withers 49cm',
     'HD-A2 ED-0/0 Eyes-clear',
     'PLN-N/N Homozygous normal',
     'AY/AY',
