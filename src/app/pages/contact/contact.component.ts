@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
   }
 
   onMailClick() {
-    location.href = 'mailto:sarah-seidel@web.de';
+    location.href = 'mailto:marysruby17@gmail.com';
   }
 
   private languageChanged(language: Language) {
