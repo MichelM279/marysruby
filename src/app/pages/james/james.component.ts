@@ -11,13 +11,13 @@ export class JamesComponent implements OnInit {
   name = "Ballyhara's Alroy Adare 'James'";
 
   titleListDe: String[] = [
-    'Champion KfT',
+    'Dt. Champion KfT',
     'KfT Jugendchampion',
     'Luxemburg Champion'
   ];
 
   titleListEn: String[] = [
-    'KfT Champion',
+    'German KfT Champion',
     'KfT Youth Champion',
     'Luxemburg Champion'
   ];
@@ -25,6 +25,8 @@ export class JamesComponent implements OnInit {
   factsDe: String[] = [
     'Geb. 24.09.2015',
     'Widerristhöhe 49cm',
+    'Nachzuchten vorhanden',
+    'ZZP 22.07.2017 angekört'
     // 'HD-A2 ED-0/0 Eyes-clear',
     // 'PLN-N/N Homozygous normal',
     // 'AY/AY',
@@ -34,6 +36,8 @@ export class JamesComponent implements OnInit {
   factsEn: String[] = [
     'Born 24.09.2015',
     'Height at withers 49cm',
+    'existing offspring',
+    'breeding examination 22.07.2017'
     // 'HD-A2 ED-0/0 Eyes-clear',
     // 'PLN-N/N Homozygous normal',
     // 'AY/AY',
