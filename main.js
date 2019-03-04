@@ -11970,7 +11970,7 @@ var ContactComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>{{name}}</h1>\r\n\r\n<app-polaroid \r\n    imgPath='assets/ella/ella-profil.JPG'\r\n    textDe='Geb. 13.11.2013'\r\n    textEn='Born 13.11.2013'>\r\n</app-polaroid>\r\n\r\n<app-pedigree-card\r\n    [name]=name\r\n    dad='Haldane World Traveller'\r\n    mom='Wheaten My Love Nice To See You'\r\n    daddad='Mil Mear Geragold Cowboy Up'\r\n    dadmom='Geragold Relax at Haldane'\r\n    momdad=\"Choroschie Drusja's Harry Callahan\"\r\n    mommom='Sophisticated Wheaten Charming-Girl'>\r\n</app-pedigree-card>"
+module.exports = "<h1>{{name}}</h1>\r\n\r\n<app-polaroid \r\n    imgPath='assets/ella/ella-profil.JPG'\r\n    textDe='Prinzessin auf der Erbse'\r\n    textEn='Princess and the Pea'>\r\n</app-polaroid>\r\n\r\n<app-list-items-card\r\n    titleDe='Steckbrief'\r\n    titleEn='Fact Sheet'\r\n    [listItemsDe]=factsDe\r\n    [listItemsEn]=factsEn>\r\n</app-list-items-card>\r\n\r\n<app-pedigree-card\r\n    [name]=name\r\n    dad='Haldane World Traveller'\r\n    mom='Wheaten My Love Nice To See You'\r\n    daddad='Mil Mear Geragold Cowboy Up'\r\n    dadmom='Geragold Relax at Haldane'\r\n    momdad=\"Choroschie Drusja's Harry Callahan\"\r\n    mommom='Sophisticated Wheaten Charming-Girl'>\r\n</app-pedigree-card>"
 
 /***/ }),
 
@@ -12003,6 +12003,14 @@ var EllaComponent = /** @class */ (function () {
     function EllaComponent() {
         // tslint:disable-next-line:quotemark
         this.name = "Sophisticated Wheaten Noelle 'Ella'";
+        this.factsDe = [
+            'Geb. 13.11.2013',
+            'Widerristhöhe 44cm',
+        ];
+        this.factsEn = [
+            'Born 13.11.2013',
+            'Height at withers 44cm'
+        ];
     }
     EllaComponent.prototype.ngOnInit = function () {
     };
@@ -12028,7 +12036,7 @@ var EllaComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>{{news}}</h1>\n\n<!--app-polaroid-collage\n  titleDe='Polaroid Haufen Beispiel'\n  titleEn='Polaroid Pile Example'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  imgPath3='assets/james/james-profil.JPG'\n  text3De='James2'\n  text3En='James2'\n  imgPath4='assets/ella/ella-profil.JPG'\n  text4De='Ella2'\n  text4En='Ella2'>\n</app-polaroid-collage-->\n\n<app-news-card\n  titleDe='Ellas Untersuchung'\n  titleEn=\"Ella's Doctors Appointment\"\n  date='15.02.2019'\n  textDe='Ellas Schwangerschaft ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-polaroid-collage\n  titleDe='Unsere Hunde'\n  titleEn='Our dogs'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe=\"Über Uns\"\n  titleEn='About Us'\n  date='25.02.2018'\n  textDe=\"Ein unwiderstehlicher Wheatenblick hat vor 15 Jahren Jahren dazu geführt, dass wir uns für diese außergewähnliche Rasse entschieden haben.\n  Bisher durften drei Wheaten bei uns einziehen.\n  Angefangen mit einem hereinschnuppern in die Welt der Showhunde, wurde das Ausstellen zu einer Leidenschaft.\n  Ella & James konnten ihre Pfoten nicht voneinander lassen und so entstand unser Kennel Mary's Ruby.\n  Unseren ersten Wurf erwarten wir gespannt im März 2019.\"\n  textEn=\"The irresistable sight of a Wheaten made us decide for this extraordinary race 15 years ago.\n  So far, we adopted three Wheaten Terriers.\n  Starting off with testing the waters of showdogs, we soon grew to passionate showdog leaders.\n  Ella & James couldn't keep their paws to themselves and so our Kennel Mary's Ruby was started.\n  Our first litter is expected in March 2019\">\n</app-news-card>\n\n<app-news-card\n  titleDe=\"Mary's Ruby offiziell gegründet!\"\n  titleEn=\"Mary's Ruby officially created!\"\n  date='18.08.2018'\n  textDe='Alle Formalien sind erfüllt, dass wir erfreulicherweise unsere Hundezucht starten können'\n  textEn=\"We are happy to announce that all formalities are met, such that we can officially begin our breeding home\">\n</app-news-card>\n"
+module.exports = "<h1>{{news}}</h1>\n\n<!--app-polaroid-collage\n  titleDe='Polaroid Haufen Beispiel'\n  titleEn='Polaroid Pile Example'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  imgPath3='assets/james/james-profil.JPG'\n  text3De='James2'\n  text3En='James2'\n  imgPath4='assets/ella/ella-profil.JPG'\n  text4De='Ella2'\n  text4En='Ella2'>\n</app-polaroid-collage-->\n\n<app-news-card\n  titleDe='Ellas Untersuchung'\n  titleEn=\"Ella's Doctors Appointment\"\n  date='15.02.2019'\n  textDe='Ellas Schwangerschaft ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-polaroid-collage\n  titleDe='Unsere Hunde'\n  titleEn='Our dogs'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe=\"Über Uns\"\n  titleEn='About Us'\n  date='25.02.2018'\n  textDe=\"Ein unwiderstehlicher Wheatenblick hat vor 15 Jahren Jahren dazu geführt, dass wir uns für diese außergewähnliche Rasse entschieden haben.\n  Bisher durften drei Wheaten bei uns einziehen.\n  Angefangen mit einem hereinschnuppern in die Welt der Showhunde, wurde das Ausstellen zu einer Leidenschaft.\n  Ella & James konnten ihre Pfoten nicht voneinander lassen und so entstand unser Kennel Mary's Ruby.\n  Unseren ersten Wurf erwarten wir gespannt im März 2019.\"\n  textEn=\"The irresistable sight of a Wheaten made us decide for this extraordinary race 15 years ago.\n  So far, we adopted three Wheaten Terriers.\n  Starting off with testing the waters of showdogs, we soon grew to passionate showdog leaders.\n  Ella & James couldn't keep their paws to themselves and so our Kennel Mary's Ruby was started.\n  Our first litter is expected in March 2019\">\n</app-news-card>\n\n<app-news-card\n  titleDe=\"Mary's Ruby offiziell gegründet!\"\n  titleEn=\"Mary's Ruby officially created!\"\n  date='28.08.2018'\n  textDe='Alle Formalien sind erfüllt, dass wir erfreulicherweise unsere Hundezucht starten können'\n  textEn=\"We are happy to announce that all formalities are met, such that we can officially begin our breeding home\">\n</app-news-card>\n"
 
 /***/ }),
 
@@ -12210,7 +12218,7 @@ var ImpressumComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>{{name}}</h1>\r\n\r\n<app-polaroid \r\n    imgPath='assets/james/james-profil.JPG'\r\n    textDe='Geb. 24.09.2015'\r\n    textEn='Born 24.09.2015'>\r\n</app-polaroid>\r\n\r\n<app-list-items-card\r\n    titleDe='Titel'\r\n    titleEn='Titles'\r\n    [listItemsDe]=titleListDe\r\n    [listItemsEn]=titleListEn>\r\n</app-list-items-card>\r\n\r\n<app-list-items-card\r\n    titleDe='Steckbrief'\r\n    titleEn='Fact Sheet'\r\n    [listItemsDe]=factsDe\r\n    [listItemsEn]=factsEn>\r\n</app-list-items-card>\r\n\r\n<app-pedigree-card\r\n    [name]=name\r\n    dad=\"Ballyhara's Kingsly\"\r\n    mom=\"Ballyhara's Treasure from Trá Lí\"\r\n    daddad=\"Wheaten Volunteer’s Ivanhoe\"\r\n    dadmom=\"Ballyhara's Diorbhall-Ita\"\r\n    momdad=\"Goforit Danny de Vito\"\r\n    mommom=\"Ballyhara's Jewel of Tara\">\r\n</app-pedigree-card>\r\n"
+module.exports = "<h1>{{name}}</h1>\r\n\r\n<app-polaroid \r\n    imgPath='assets/james/james-profil.JPG'\r\n    textDe='Balljäger'\r\n    textEn='Ball Hunter'>\r\n</app-polaroid>\r\n\r\n<app-list-items-card\r\n    titleDe='Titel'\r\n    titleEn='Titles'\r\n    [listItemsDe]=titleListDe\r\n    [listItemsEn]=titleListEn>\r\n</app-list-items-card>\r\n\r\n<app-list-items-card\r\n    titleDe='Steckbrief'\r\n    titleEn='Fact Sheet'\r\n    [listItemsDe]=factsDe\r\n    [listItemsEn]=factsEn>\r\n</app-list-items-card>\r\n\r\n<app-pedigree-card\r\n    [name]=name\r\n    dad=\"Ballyhara's Kingsly\"\r\n    mom=\"Ballyhara's Treasure from Trá Lí\"\r\n    daddad=\"Wheaten Volunteer’s Ivanhoe\"\r\n    dadmom=\"Ballyhara's Diorbhall-Ita\"\r\n    momdad=\"Goforit Danny de Vito\"\r\n    mommom=\"Ballyhara's Jewel of Tara\">\r\n</app-pedigree-card>\r\n"
 
 /***/ }),
 
@@ -12254,18 +12262,12 @@ var JamesComponent = /** @class */ (function () {
             'Luxemburg Champion'
         ];
         this.factsDe = [
+            'Geb. 24.09.2015',
             'Widerristhöhe 49cm',
-            'HD-A2 ED-0/0 Eyes-clear',
-            'PLN-N/N Homozygous normal',
-            'AY/AY',
-            'B/B'
         ];
         this.factsEn = [
+            'Born 24.09.2015',
             'Height at withers 49cm',
-            'HD-A2 ED-0/0 Eyes-clear',
-            'PLN-N/N Homozygous normal',
-            'AY/AY',
-            'B/B'
         ];
     }
     JamesComponent.prototype.ngOnInit = function () {
