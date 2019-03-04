@@ -2,9 +2,16 @@
 
 <app-polaroid 
     imgPath='assets/ella/ella-profil.JPG'
-    textDe='Geb. 13.11.2013'
-    textEn='Born 13.11.2013'>
+    textDe='Prinzessin auf der Erbse'
+    textEn='Princess and the Pea'>
 </app-polaroid>
+
+<app-list-items-card
+    titleDe='Steckbrief'
+    titleEn='Fact Sheet'
+    [listItemsDe]=factsDe
+    [listItemsEn]=factsEn>
+</app-list-items-card>
 
 <app-pedigree-card
     [name]=name

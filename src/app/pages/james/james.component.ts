@@ -23,19 +23,21 @@ export class JamesComponent implements OnInit {
   ];
 
   factsDe: String[] = [
+    'Geb. 24.09.2015',
     'Widerristhöhe 49cm',
-    'HD-A2 ED-0/0 Eyes-clear',
-    'PLN-N/N Homozygous normal',
-    'AY/AY',
-    'B/B'
+    // 'HD-A2 ED-0/0 Eyes-clear',
+    // 'PLN-N/N Homozygous normal',
+    // 'AY/AY',
+    // 'B/B'
   ];
 
   factsEn: String[] = [
+    'Born 24.09.2015',
     'Height at withers 49cm',
-    'HD-A2 ED-0/0 Eyes-clear',
-    'PLN-N/N Homozygous normal',
-    'AY/AY',
-    'B/B'
+    // 'HD-A2 ED-0/0 Eyes-clear',
+    // 'PLN-N/N Homozygous normal',
+    // 'AY/AY',
+    // 'B/B'
   ];
 
 
