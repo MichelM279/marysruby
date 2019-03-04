@@ -12252,22 +12252,34 @@ var JamesComponent = /** @class */ (function () {
         // tslint:disable-next-line:quotemark
         this.name = "Ballyhara's Alroy Adare 'James'";
         this.titleListDe = [
-            'Champion KfT',
+            'Dt. Champion KfT',
             'KfT Jugendchampion',
             'Luxemburg Champion'
         ];
         this.titleListEn = [
-            'KfT Champion',
+            'German KfT Champion',
             'KfT Youth Champion',
             'Luxemburg Champion'
         ];
         this.factsDe = [
             'Geb. 24.09.2015',
             'Widerristhöhe 49cm',
+            'Nachzuchten vorhanden',
+            'ZZP 22.07.2017 angekört'
+            // 'HD-A2 ED-0/0 Eyes-clear',
+            // 'PLN-N/N Homozygous normal',
+            // 'AY/AY',
+            // 'B/B'
         ];
         this.factsEn = [
             'Born 24.09.2015',
             'Height at withers 49cm',
+            'existing offspring',
+            'breeding examination 22.07.2017'
+            // 'HD-A2 ED-0/0 Eyes-clear',
+            // 'PLN-N/N Homozygous normal',
+            // 'AY/AY',
+            // 'B/B'
         ];
     }
     JamesComponent.prototype.ngOnInit = function () {
