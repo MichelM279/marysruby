@@ -11936,7 +11936,7 @@ var ContactComponent = /** @class */ (function () {
         location.href = 'tel:+49 171 4871595';
     };
     ContactComponent.prototype.onMailClick = function () {
-        location.href = 'mailto:sarah-seidel@web.de';
+        location.href = 'mailto:marysruby17@gmail.com';
     };
     ContactComponent.prototype.languageChanged = function (language) {
         if (language === src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__["Language"].ENGLISH) {
