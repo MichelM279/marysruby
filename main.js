@@ -12038,7 +12038,7 @@ var EllaComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>{{news}}</h1>\n\n<!--app-polaroid-collage\n  titleDe='Polaroid Haufen Beispiel'\n  titleEn='Polaroid Pile Example'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  imgPath3='assets/james/james-profil.JPG'\n  text3De='James2'\n  text3En='James2'\n  imgPath4='assets/ella/ella-profil.JPG'\n  text4De='Ella2'\n  text4En='Ella2'>\n</app-polaroid-collage-->\n\n<app-news-card\n  titleDe='Ellas Untersuchung'\n  titleEn=\"Ella's Doctors Appointment\"\n  date='15.02.2019'\n  textDe='Ellas Trächtigkeit ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-polaroid-collage\n  titleDe='Unsere Hunde'\n  titleEn='Our dogs'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe=\"Über Uns\"\n  titleEn='About Us'\n  date='25.02.2018'\n  textDe=\"Ein unwiderstehlicher Wheatenblick hat vor 15 Jahren Jahren dazu geführt, dass wir uns für diese außergewähnliche Rasse entschieden haben.\n  Bisher durften drei Wheaten bei uns einziehen.\n  Angefangen mit einem hereinschnuppern in die Welt der Showhunde, wurde das Ausstellen zu einer Leidenschaft.\n  Ella & James konnten ihre Pfoten nicht voneinander lassen und so entstand unser Kennel Mary's Ruby.\n  Unseren ersten Wurf erwarten wir gespannt im März 2019.\"\n  textEn=\"The irresistable sight of a Wheaten made us decide for this extraordinary race 15 years ago.\n  So far, we adopted three Wheaten Terriers.\n  Starting off with testing the waters of showdogs, we soon grew to passionate showdog leaders.\n  Ella & James couldn't keep their paws to themselves and so our Kennel Mary's Ruby was started.\n  Our first litter is expected in March 2019\">\n</app-news-card>\n\n<app-polaroid-collage\n  titleDe='Schnappschüsse'\n  titleEn='Snapshots'\n  imgPath1='assets/erste-schnappschuesse/die-gang.JPG'\n  text1De='Die Gang'\n  text1En='The Gang'\n  imgPath2='assets/erste-schnappschuesse/ella-james-feld.JPG'\n  text2De='Wettrennen'\n  text2En='Racing and Chasing'\n  imgPath3='assets/erste-schnappschuesse/ella-wald.JPG'\n  text3De='Waldspaziergang'\n  text3En='Forest Walks'\n  imgPath4='assets/erste-schnappschuesse/james-sonne.JPG'\n  text4De='Sunny Boy'\n  text4En='Sunny Boy'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe=\"Mary's Ruby offiziell gegründet!\"\n  titleEn=\"Mary's Ruby officially created!\"\n  date='28.08.2018'\n  textDe='Alle Formalien sind erfüllt, dass wir erfreulicherweise unsere Hundezucht starten können'\n  textEn=\"We are happy to announce that all formalities are met, such that we can officially begin our breeding home\">\n</app-news-card>\n"
+module.exports = "<h1>{{news}}</h1>\n\n<!--app-polaroid-collage\n  titleDe='Polaroid Haufen Beispiel'\n  titleEn='Polaroid Pile Example'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  imgPath3='assets/james/james-profil.JPG'\n  text3De='James2'\n  text3En='James2'\n  imgPath4='assets/ella/ella-profil.JPG'\n  text4De='Ella2'\n  text4En='Ella2'>\n</app-polaroid-collage-->\n\n<app-news-card\n  titleDe='A-Wurf'\n  titleEn='A-Litter'\n  date='16.03.2019'\n  textDe='Ellas bringt 8 gesunde kleine Welpen zur Welt!'\n  textEn=\"Ella's births 8 healthy little puppies!\">\n</app-news-card>\n<div class='action-button-wrapper'>\n  <button mat-raised-button color='accent' (click)='onALitter()'>\n    <mat-icon>play_arrow</mat-icon>\n    Zum A-Wurf!\n  </button>\n</div>\n\n<app-polaroid-collage\n  titleDe='Unsere Hunde'\n  titleEn='Our dogs'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe='Ellas Untersuchung'\n  titleEn=\"Ella's Doctors Appointment\"\n  date='15.02.2019'\n  textDe='Ellas Trächtigkeit ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-news-card\n  titleDe=\"Über Uns\"\n  titleEn='About Us'\n  date='25.02.2018'\n  textDe=\"Ein unwiderstehlicher Wheatenblick hat vor 15 Jahren Jahren dazu geführt, dass wir uns für diese außergewähnliche Rasse entschieden haben.\n  Bisher durften drei Wheaten bei uns einziehen.\n  Angefangen mit einem hereinschnuppern in die Welt der Showhunde, wurde das Ausstellen zu einer Leidenschaft.\n  Ella & James konnten ihre Pfoten nicht voneinander lassen und so entstand unser Kennel Mary's Ruby.\n  Unseren ersten Wurf erwarten wir gespannt im März 2019.\"\n  textEn=\"The irresistable sight of a Wheaten made us decide for this extraordinary race 15 years ago.\n  So far, we adopted three Wheaten Terriers.\n  Starting off with testing the waters of showdogs, we soon grew to passionate showdog leaders.\n  Ella & James couldn't keep their paws to themselves and so our Kennel Mary's Ruby was started.\n  Our first litter is expected in March 2019\">\n</app-news-card>\n\n<app-polaroid-collage\n  titleDe='Schnappschüsse'\n  titleEn='Snapshots'\n  imgPath1='assets/erste-schnappschuesse/die-gang.JPG'\n  text1De='Die Gang'\n  text1En='The Gang'\n  imgPath2='assets/erste-schnappschuesse/ella-james-feld.JPG'\n  text2De='Wettrennen'\n  text2En='Racing and Chasing'\n  imgPath3='assets/erste-schnappschuesse/ella-wald.JPG'\n  text3De='Waldspaziergang'\n  text3En='Forest Walks'\n  imgPath4='assets/erste-schnappschuesse/james-sonne.JPG'\n  text4De='Sunny Boy'\n  text4En='Sunny Boy'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe=\"Mary's Ruby offiziell gegründet!\"\n  titleEn=\"Mary's Ruby officially created!\"\n  date='28.08.2018'\n  textDe='Alle Formalien sind erfüllt, dass wir erfreulicherweise unsere Hundezucht starten können'\n  textEn=\"We are happy to announce that all formalities are met, such that we can officially begin our breeding home\">\n</app-news-card>\n"
 
 /***/ }),
 
@@ -12049,7 +12049,7 @@ module.exports = "<h1>{{news}}</h1>\n\n<!--app-polaroid-collage\n  titleDe='Pola
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = ".action-button-wrapper {\n  margin-left: 16px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvaG9tZS9DOlxcVXNlcnNcXE1pY2hlbFxcRG9jdW1lbnRzXFxXb3Jrc3BhY2VcXG1hcnlzcnVieS9zcmNcXGFwcFxccGFnZXNcXGhvbWVcXGhvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxpQkFBaUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hY3Rpb24tYnV0dG9uLXdyYXBwZXIge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDE2cHg7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -12067,13 +12067,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/language.service */ "./src/app/services/language.service.ts");
 /* harmony import */ var src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/datatypes/language */ "./src/app/datatypes/language.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 
 
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(languageService) {
+    function HomeComponent(languageService, router) {
         this.languageService = languageService;
+        this.router = router;
         this.newsDe = 'Aktuelles';
         this.newsEn = 'News';
     }
@@ -12081,6 +12084,9 @@ var HomeComponent = /** @class */ (function () {
         var _this = this;
         this.languageService.subscribe(function (language) { return _this.languageChanged(language); });
         this.languageChanged(this.languageService.language);
+    };
+    HomeComponent.prototype.onALitter = function () {
+        this.router.navigateByUrl('/a');
     };
     HomeComponent.prototype.languageChanged = function (language) {
         if (language === src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_3__["Language"].ENGLISH) {
@@ -12096,7 +12102,8 @@ var HomeComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/pages/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/pages/home/home.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__["LanguageService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__["LanguageService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -12308,7 +12315,7 @@ var JamesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\n  <mat-card-content>\n    Coming Soon!\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card>\n  <mat-card-content>\n    Details coming soon!\n  </mat-card-content>\n</mat-card>\n\n\n<app-polaroid-collage\n  titleDe='Die stolzen Eltern'\n  titleEn='The proud Parents'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>"
 
 /***/ }),
 
