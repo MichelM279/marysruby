@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguageService } from 'src/app/services/language.service';
 import { Language } from 'src/app/datatypes/language';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,11 +14,16 @@ export class HomeComponent implements OnInit {
   newsDe = 'Aktuelles';
   newsEn = 'News';
 
-  constructor(private languageService: LanguageService) { }
+  constructor(private languageService: LanguageService,
+    private router: Router) { }
 
   ngOnInit() {
     this.languageService.subscribe(language => this.languageChanged(language));
     this.languageChanged(this.languageService.language);
+  }
+
+  onALitter() {
+    this.router.navigateByUrl('/a');
   }
 
   private languageChanged(language: Language) {
