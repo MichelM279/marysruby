@@ -18,12 +18,18 @@
 </app-polaroid-collage-->
 
 <app-news-card
-  titleDe='Ellas Untersuchung'
-  titleEn="Ella's Doctors Appointment"
-  date='15.02.2019'
-  textDe='Ellas Trächtigkeit ist nun offiziell bestätigt!'
-  textEn="Ella's pregnancy is now officially confirmed!">
+  titleDe='A-Wurf'
+  titleEn='A-Litter'
+  date='16.03.2019'
+  textDe='Ellas bringt 8 gesunde kleine Welpen zur Welt!'
+  textEn="Ella's births 8 healthy little puppies!">
 </app-news-card>
+<div class='action-button-wrapper'>
+  <button mat-raised-button color='accent' (click)='onALitter()'>
+    <mat-icon>play_arrow</mat-icon>
+    Zum A-Wurf!
+  </button>
+</div>
 
 <app-polaroid-collage
   titleDe='Unsere Hunde'
@@ -37,6 +43,14 @@
   text2En='Ella'
   nav2='/ella'>
 </app-polaroid-collage>
+
+<app-news-card
+  titleDe='Ellas Untersuchung'
+  titleEn="Ella's Doctors Appointment"
+  date='15.02.2019'
+  textDe='Ellas Trächtigkeit ist nun offiziell bestätigt!'
+  textEn="Ella's pregnancy is now officially confirmed!">
+</app-news-card>
 
 <app-news-card
   titleDe="Über Uns"
