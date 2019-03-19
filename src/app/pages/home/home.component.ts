@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   news: String;
-  newsDe = 'Aktuelles';
-  newsEn = 'News';
+  private newsDe = 'Aktuelles';
+  private newsEn = 'News';
 
   constructor(private languageService: LanguageService,
     private router: Router) { }

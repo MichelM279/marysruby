@@ -1,9 +1,10 @@
-<mat-card>
-  <mat-card-content>
-    Details coming soon!
-  </mat-card-content>
-</mat-card>
+<h1>{{headline}}</h1>
 
+<app-polaroid 
+    imgPath='assets/aWurf/aWurf.JPG'
+    textDe='8 Hündinnen und 2 Rüden!'
+    textEn='8 Bitches and 2 Males!'>
+</app-polaroid>
 
 <app-polaroid-collage
   titleDe='Die stolzen Eltern'
@@ -17,3 +18,9 @@
   text2En='Ella'
   nav2='/ella'>
 </app-polaroid-collage>
+
+<mat-card>
+  <mat-card-content>
+    {{details}}
+  </mat-card-content>
+</mat-card>
