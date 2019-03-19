@@ -12038,7 +12038,7 @@ var EllaComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>{{news}}</h1>\n\n<!--app-polaroid-collage\n  titleDe='Polaroid Haufen Beispiel'\n  titleEn='Polaroid Pile Example'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  imgPath3='assets/james/james-profil.JPG'\n  text3De='James2'\n  text3En='James2'\n  imgPath4='assets/ella/ella-profil.JPG'\n  text4De='Ella2'\n  text4En='Ella2'>\n</app-polaroid-collage-->\n\n<app-news-card\n  titleDe='A-Wurf'\n  titleEn='A-Litter'\n  date='16.03.2019'\n  textDe='Ellas bringt 8 gesunde kleine Welpen zur Welt!'\n  textEn=\"Ella's births 8 healthy little puppies!\">\n</app-news-card>\n<div class='action-button-wrapper'>\n  <button mat-raised-button color='accent' (click)='onALitter()'>\n    <mat-icon>play_arrow</mat-icon>\n    Zum A-Wurf!\n  </button>\n</div>\n\n<app-polaroid-collage\n  titleDe='Unsere Hunde'\n  titleEn='Our dogs'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe='Ellas Untersuchung'\n  titleEn=\"Ella's Doctors Appointment\"\n  date='15.02.2019'\n  textDe='Ellas Trächtigkeit ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-news-card\n  titleDe=\"Über Uns\"\n  titleEn='About Us'\n  date='25.02.2018'\n  textDe=\"Ein unwiderstehlicher Wheatenblick hat vor 15 Jahren Jahren dazu geführt, dass wir uns für diese außergewähnliche Rasse entschieden haben.\n  Bisher durften drei Wheaten bei uns einziehen.\n  Angefangen mit einem hereinschnuppern in die Welt der Showhunde, wurde das Ausstellen zu einer Leidenschaft.\n  Ella & James konnten ihre Pfoten nicht voneinander lassen und so entstand unser Kennel Mary's Ruby.\n  Unseren ersten Wurf erwarten wir gespannt im März 2019.\"\n  textEn=\"The irresistable sight of a Wheaten made us decide for this extraordinary race 15 years ago.\n  So far, we adopted three Wheaten Terriers.\n  Starting off with testing the waters of showdogs, we soon grew to passionate showdog leaders.\n  Ella & James couldn't keep their paws to themselves and so our Kennel Mary's Ruby was started.\n  Our first litter is expected in March 2019\">\n</app-news-card>\n\n<app-polaroid-collage\n  titleDe='Schnappschüsse'\n  titleEn='Snapshots'\n  imgPath1='assets/erste-schnappschuesse/die-gang.JPG'\n  text1De='Die Gang'\n  text1En='The Gang'\n  imgPath2='assets/erste-schnappschuesse/ella-james-feld.JPG'\n  text2De='Wettrennen'\n  text2En='Racing and Chasing'\n  imgPath3='assets/erste-schnappschuesse/ella-wald.JPG'\n  text3De='Waldspaziergang'\n  text3En='Forest Walks'\n  imgPath4='assets/erste-schnappschuesse/james-sonne.JPG'\n  text4De='Sunny Boy'\n  text4En='Sunny Boy'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe=\"Mary's Ruby offiziell gegründet!\"\n  titleEn=\"Mary's Ruby officially created!\"\n  date='28.08.2018'\n  textDe='Alle Formalien sind erfüllt, dass wir erfreulicherweise unsere Hundezucht starten können'\n  textEn=\"We are happy to announce that all formalities are met, such that we can officially begin our breeding home\">\n</app-news-card>\n"
+module.exports = "<h1>{{news}}</h1>\n\n<!--app-polaroid-collage\n  titleDe='Polaroid Haufen Beispiel'\n  titleEn='Polaroid Pile Example'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  imgPath3='assets/james/james-profil.JPG'\n  text3De='James2'\n  text3En='James2'\n  imgPath4='assets/ella/ella-profil.JPG'\n  text4De='Ella2'\n  text4En='Ella2'>\n</app-polaroid-collage-->\n\n<app-news-card\n  titleDe='A-Wurf'\n  titleEn='A-Litter'\n  date='16.03.2019'\n  textDe='Ella bringt 8 gesunde kleine Welpen zur Welt!'\n  textEn=\"Ella births 8 healthy little puppies!\">\n</app-news-card>\n<div class='action-button-wrapper'>\n  <button mat-raised-button color='accent' (click)='onALitter()'>\n    <mat-icon>play_arrow</mat-icon>\n    Zum A-Wurf!\n  </button>\n</div>\n\n<app-polaroid-collage\n  titleDe='Unsere Hunde'\n  titleEn='Our dogs'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe='Ellas Untersuchung'\n  titleEn=\"Ella's Doctors Appointment\"\n  date='15.02.2019'\n  textDe='Ellas Trächtigkeit ist nun offiziell bestätigt!'\n  textEn=\"Ella's pregnancy is now officially confirmed!\">\n</app-news-card>\n\n<app-news-card\n  titleDe=\"Über Uns\"\n  titleEn='About Us'\n  date='25.02.2018'\n  textDe=\"Ein unwiderstehlicher Wheatenblick hat vor 15 Jahren dazu geführt, dass wir uns für diese außergewähnliche Rasse entschieden haben.\n  Bisher durften drei Wheaten bei uns einziehen.\n  Angefangen mit einem hereinschnuppern in die Welt der Showhunde, wurde das Ausstellen zu einer Leidenschaft.\n  Ella & James konnten ihre Pfoten nicht voneinander lassen und so entstand unser Kennel Mary's Ruby.\n  Unseren ersten Wurf erwarten wir gespannt im März 2019.\"\n  textEn=\"The irresistable sight of a Wheaten made us decide for this extraordinary race 15 years ago.\n  So far, we adopted three Wheaten Terriers.\n  Starting off with testing the waters of showdogs, we soon grew to passionate showdog leaders.\n  Ella & James couldn't keep their paws to themselves and so our Kennel Mary's Ruby was started.\n  Our first litter is expected in March 2019\">\n</app-news-card>\n\n<app-polaroid-collage\n  titleDe='Schnappschüsse'\n  titleEn='Snapshots'\n  imgPath1='assets/erste-schnappschuesse/die-gang.JPG'\n  text1De='Die Gang'\n  text1En='The Gang'\n  imgPath2='assets/erste-schnappschuesse/ella-james-feld.JPG'\n  text2De='Wettrennen'\n  text2En='Racing and Chasing'\n  imgPath3='assets/erste-schnappschuesse/ella-wald.JPG'\n  text3De='Waldspaziergang'\n  text3En='Forest Walks'\n  imgPath4='assets/erste-schnappschuesse/james-sonne.JPG'\n  text4De='Sunny Boy'\n  text4En='Sunny Boy'>\n</app-polaroid-collage>\n\n<app-news-card\n  titleDe=\"Mary's Ruby offiziell gegründet!\"\n  titleEn=\"Mary's Ruby officially created!\"\n  date='28.08.2018'\n  textDe='Alle Formalien sind erfüllt, dass wir erfreulicherweise unsere Hundezucht starten können'\n  textEn=\"We are happy to announce that all formalities are met, such that we can officially begin our breeding home\">\n</app-news-card>\n"
 
 /***/ }),
 
@@ -12119,7 +12119,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>{{title}}</h1>\n\n<mat-card>\n  <mat-card-header>\n    <mat-card-title>{{betreiberin}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      {{zucht}} Mary's Ruby\n    </p>\n    <p>\n      Zum Jägerpl. 17\n    </p>\n    <p>\n      32549 Bad Oeynhausen\n    </p>\n    <p>\n      Tel: +49 171 4871595\n    </p>\n    <p>\n      {{ansprechpartner}}: Sarah Seidel\n    </p>\n  </mat-card-content>\n  <mat-divider></mat-divider>\n  <mat-card-header>\n    <mat-card-title>{{verantwortlich}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      Sarah Seidel\n    </p>\n  </mat-card-content>\n  <mat-divider></mat-divider>\n  <mat-card-header>\n    <mat-card-title>Webdesign</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      Michel Mangold\n    </p>\n  </mat-card-content>\n</mat-card>\n\n<mat-card>\n  <mat-card-header>\n    <mat-card-title>{{inhalteDritter}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <p>{{inhalteDritterText1}}</p>\n    <p>{{inhalteDritterText2}}</p>\n  </mat-card-content>\n  <mat-divider></mat-divider>\n  <mat-card-header>\n    <mat-card-title>{{disclaimer}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    Link: <a href=\"http://www.disclaimer.de/disclaimer.htm\" target=\"_blank\" class=\"content\">{{disclaimer}}</a>\n  </mat-card-content>\n</mat-card>"
+module.exports = "<h1>{{title}}</h1>\n\n<mat-card>\n  <mat-card-header>\n    <mat-card-title>{{betreiberin}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      {{zucht}} Mary's Ruby\n    </p>\n    <p>\n      Zum Jägerpl. 17\n    </p>\n    <p>\n      32549 Bad Oeynhausen\n    </p>\n    <p>\n      Tel: +49 171 4871595\n    </p>\n    <p>\n      {{ansprechpartner}}: Sarah Seidel\n    </p>\n  </mat-card-content>\n  <mat-divider></mat-divider>\n  <mat-card-header>\n      <mat-card-title>{{club}}</mat-card-title>\n    </mat-card-header>\n    <mat-card-content>\n      <p>\n        KfT & VdH\n      </p>\n    </mat-card-content>\n  <mat-divider></mat-divider>\n  <mat-card-header>\n    <mat-card-title>{{verantwortlich}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      Sarah Seidel\n    </p>\n  </mat-card-content>\n  <mat-divider></mat-divider>\n  <mat-card-header>\n    <mat-card-title>Webdesign</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      Michel Mangold\n    </p>\n  </mat-card-content>\n</mat-card>\n\n<mat-card>\n  <mat-card-header>\n    <mat-card-title>{{inhalteDritter}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <p>{{inhalteDritterText1}}</p>\n    <p>{{inhalteDritterText2}}</p>\n  </mat-card-content>\n  <mat-divider></mat-divider>\n  <mat-card-header>\n    <mat-card-title>{{disclaimer}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    Link: <a href=\"http://www.disclaimer.de/disclaimer.htm\" target=\"_blank\" class=\"content\">{{disclaimer}}</a>\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
@@ -12164,6 +12164,8 @@ var ImpressumComponent = /** @class */ (function () {
         this.zuchtEn = 'Dog kennel';
         this.ansprechpartnerDe = 'Ansprechpartner';
         this.ansprechpartnerEn = 'Contact Person';
+        this.clubDe = 'Club Mitgliedschaften';
+        this.clubEn = 'Club memberships';
         this.verantwortlichDe = 'Verantwortlich für den Inhalt';
         this.verantwortlichEn = 'Responsible for all content';
         this.disclaimerDe = 'Haftungsausschluss';
@@ -12187,6 +12189,7 @@ var ImpressumComponent = /** @class */ (function () {
             this.betreiberin = this.betreiberinEn;
             this.zucht = this.zuchtEn;
             this.ansprechpartner = this.ansprechpartnerEn;
+            this.club = this.clubEn;
             this.verantwortlich = this.verantwortlichEn;
             this.disclaimer = this.disclaimerEn;
             this.inhalteDritter = this.inhalteDritterEn;
@@ -12198,6 +12201,7 @@ var ImpressumComponent = /** @class */ (function () {
             this.betreiberin = this.betreiberinDe;
             this.zucht = this.zuchtDe;
             this.ansprechpartner = this.ansprechpartnerDe;
+            this.club = this.clubDe;
             this.verantwortlich = this.verantwortlichDe;
             this.disclaimer = this.disclaimerDe;
             this.inhalteDritter = this.inhalteDritterDe;
@@ -12315,7 +12319,7 @@ var JamesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\n  <mat-card-content>\n    Details coming soon!\n  </mat-card-content>\n</mat-card>\n\n\n<app-polaroid-collage\n  titleDe='Die stolzen Eltern'\n  titleEn='The proud Parents'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>"
+module.exports = "<h1>{{headline}}</h1>\n\n<app-polaroid \n    imgPath='assets/aWurf/aWurf.JPG'\n    textDe='8 Hündinnen und 2 Rüden!'\n    textEn='8 Bitches and 2 Males!'>\n</app-polaroid>\n\n<app-polaroid-collage\n  titleDe='Die stolzen Eltern'\n  titleEn='The proud Parents'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<mat-card>\n  <mat-card-content>\n    {{details}}\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
@@ -12342,12 +12346,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AComponent", function() { return AComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/datatypes/language */ "./src/app/datatypes/language.ts");
+/* harmony import */ var src_app_services_language_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/language.service */ "./src/app/services/language.service.ts");
+
+
 
 
 var AComponent = /** @class */ (function () {
-    function AComponent() {
+    function AComponent(languageService) {
+        this.languageService = languageService;
+        this.headlineDe = 'A-Wurf';
+        this.headlineEn = 'A-Litter';
+        this.detailsDe = 'Näheres folgt in Kürze!';
+        this.detailsEn = 'Details coming soon!';
     }
     AComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.languageService.subscribe(function (language) { return _this.languageChanged(language); });
+        this.languageChanged(this.languageService.language);
+    };
+    AComponent.prototype.languageChanged = function (language) {
+        if (language === src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_2__["Language"].ENGLISH) {
+            this.headline = this.headlineEn;
+            this.details = this.detailsEn;
+        }
+        else {
+            this.headline = this.headlineDe;
+            this.details = this.detailsDe;
+        }
     };
     AComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -12355,7 +12381,7 @@ var AComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./a.component.html */ "./src/app/pages/litters/a/a.component.html"),
             styles: [__webpack_require__(/*! ./a.component.scss */ "./src/app/pages/litters/a/a.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_language_service__WEBPACK_IMPORTED_MODULE_3__["LanguageService"]])
     ], AComponent);
     return AComponent;
 }());
