@@ -25,6 +25,10 @@ export class ImpressumComponent implements OnInit {
   private ansprechpartnerDe = 'Ansprechpartner';
   private ansprechpartnerEn = 'Contact Person';
 
+  club: String;
+  private clubDe = 'Club Mitgliedschaften';
+  private clubEn = 'Club memberships';
+
   verantwortlich: String;
   private verantwortlichDe = 'Verantwortlich für den Inhalt';
   private verantwortlichEn = 'Responsible for all content';
@@ -81,6 +85,7 @@ export class ImpressumComponent implements OnInit {
       this.betreiberin = this.betreiberinEn;
       this.zucht = this.zuchtEn;
       this.ansprechpartner = this.ansprechpartnerEn;
+      this.club = this.clubEn;
       this.verantwortlich = this.verantwortlichEn;
       this.disclaimer = this.disclaimerEn;
       this.inhalteDritter = this.inhalteDritterEn;
@@ -91,6 +96,7 @@ export class ImpressumComponent implements OnInit {
       this.betreiberin = this.betreiberinDe;
       this.zucht = this.zuchtDe;
       this.ansprechpartner = this.ansprechpartnerDe;
+      this.club = this.clubDe;
       this.verantwortlich = this.verantwortlichDe;
       this.disclaimer = this.disclaimerDe;
       this.inhalteDritter = this.inhalteDritterDe;
