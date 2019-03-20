@@ -12319,7 +12319,7 @@ var JamesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>{{headline}}</h1>\n\n<app-polaroid \n    imgPath='assets/aWurf/aWurf.JPG'\n    textDe='8 Hündinnen und 2 Rüden!'\n    textEn='8 Bitches and 2 Males!'>\n</app-polaroid>\n\n<app-polaroid-collage\n  titleDe='Die stolzen Eltern'\n  titleEn='The proud Parents'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<mat-card>\n  <mat-card-content>\n    {{details}}\n  </mat-card-content>\n</mat-card>"
+module.exports = "<h1>{{headline}}</h1>\n\n<app-polaroid \n    imgPath='assets/aWurf/aWurf.JPG'\n    textDe='6 Hündinnen und 2 Rüden!'\n    textEn='6 Bitches and 2 Males!'>\n</app-polaroid>\n\n<app-polaroid-collage\n  titleDe='Die stolzen Eltern'\n  titleEn='The proud Parents'\n  imgPath1='assets/james/james-profil.JPG'\n  text1De='James'\n  text1En='James'\n  nav1='/james'\n  imgPath2='assets/ella/ella-profil.JPG'\n  text2De='Ella'\n  text2En='Ella'\n  nav2='/ella'>\n</app-polaroid-collage>\n\n<mat-card>\n  <mat-card-content>\n    {{details}}\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
