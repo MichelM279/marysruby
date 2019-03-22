@@ -57,7 +57,7 @@ export class ContactFormComponent implements OnInit {
 
   onSubmit(): void {
     const contact: Contact = this.formToContact(this.contactForm);
-    this.emailService.sendContactEmail(contact);
+    this.emailService.sendContactEmail(contact).subscribe();
   }
 
   private formToContact(form: FormGroup): Contact {
