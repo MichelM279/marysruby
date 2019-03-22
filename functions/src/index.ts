@@ -8,8 +8,8 @@ const transporter = nodemailer.createTransport('smtps://marysrubywebapp@gmail.co
 export const sendMail = functions.https.onRequest((req, res) => {
     corsHandler(req, res, () => {
         req.method = 'POST';
-        let subject: string = req.query.subject;
-        let htmlString: string = req.body.html;
+        const subject: string = req.query.subject;
+        const htmlString: string = req.body.html;
         const mailOptions = {
             to: 'marysruby17@gmail.com',
             subject: subject,
