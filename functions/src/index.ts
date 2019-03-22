@@ -1,9 +1,10 @@
 import * as functions from 'firebase-functions';
 import * as nodemailer from 'nodemailer';
 import * as cors from 'cors';
+import * as secrets from './secrets';
 
 const corsHandler = cors({ origin: true });
-const transporter = nodemailer.createTransport('smtps://marysrubywebapp@gmail.com:MarysRubyKennel@smtp.gmail.com');
+const transporter = nodemailer.createTransport('smtps://marysrubywebapp@gmail.com:' + secrets.MAILPASS + '@smtp.gmail.com');
 
 export const sendMail = functions.https.onRequest((req, res) => {
     corsHandler(req, res, () => {
