@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "deploy": "ngh --cname=www.marysruby.de",
-    "deploy firebase": "firebase deploy",
+    "deploy-firebase": "firebase deploy",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
