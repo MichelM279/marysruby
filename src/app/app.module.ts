@@ -16,7 +16,8 @@ import {
   MatFormFieldModule,
   MatIconModule,
   MatInputModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatSnackBarModule
   } from '@angular/material';
 // Pages
 import { HomeComponent } from './pages/home/home.component';
@@ -87,6 +88,7 @@ const routes: Routes = [
     MatIconModule,
     MatInputModule,
     MatSidenavModule,
+    MatSnackBarModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],

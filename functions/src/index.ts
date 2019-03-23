@@ -18,7 +18,7 @@ export const sendMail = functions.https.onRequest((req, res) => {
         }
         transporter.sendMail(mailOptions, function(err, response) {
             if (err) {
-                res.end('Mail not sent. Subject: ' + subject + '. html: ' + htmlString );
+                res.end('Mail not sent');
             } else {
                 res.end('Mail sent');
             }
