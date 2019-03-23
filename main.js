@@ -10767,6 +10767,7 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatIconModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatInputModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSnackBarModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(routes)
             ],
@@ -10820,6 +10821,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_datatypes_language__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/datatypes/language */ "./src/app/datatypes/language.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var src_app_datatypes_contact__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/datatypes/contact */ "./src/app/datatypes/contact.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+
 
 
 
@@ -10828,9 +10831,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ContactFormComponent = /** @class */ (function () {
-    function ContactFormComponent(languageService, emailService) {
+    function ContactFormComponent(languageService, emailService, snackbar) {
         this.languageService = languageService;
         this.emailService = emailService;
+        this.snackbar = snackbar;
         this.titleDe = 'Kontakt';
         this.titleEn = 'Contact';
         this.subtitleDe = 'Wir freuen uns auf Ihre Nachricht!';
@@ -10845,6 +10849,8 @@ var ContactFormComponent = /** @class */ (function () {
         this.messageEn = 'Message';
         this.submitDe = 'Senden';
         this.submitEn = 'Submit';
+        this.mailSentDe = 'Nachricht gesendet!';
+        this.mailSentEn = 'Message sent!';
         this.contactForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormGroup"]({
             name: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["Validators"].required]),
             email: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["Validators"].email]),
@@ -10859,7 +10865,11 @@ var ContactFormComponent = /** @class */ (function () {
     };
     ContactFormComponent.prototype.onSubmit = function () {
         var contact = this.formToContact(this.contactForm);
-        this.emailService.sendContactEmail(contact).subscribe();
+        this.emailService.sendContactEmail(contact).subscribe(function (res) {
+            console.log(res);
+        });
+        // TODO Error handling
+        this.snackbar.open(this.mailSent, this.snackbarClose, { duration: 6000 });
     };
     ContactFormComponent.prototype.formToContact = function (form) {
         var contactDetails = new src_app_datatypes_contact__WEBPACK_IMPORTED_MODULE_6__["Contact"](form.value.name, form.value.email, form.value.phone, form.value.message);
@@ -10874,6 +10884,8 @@ var ContactFormComponent = /** @class */ (function () {
             this.mailInvalid = this.mailInvalidEn;
             this.fieldRequired1 = this.fieldRequired1En;
             this.fieldRequired2 = this.fieldRequired2En;
+            this.mailSent = this.mailSentEn;
+            this.snackbarClose = this.snackbarCloseEn;
         }
         else {
             this.title = this.titleDe;
@@ -10883,6 +10895,8 @@ var ContactFormComponent = /** @class */ (function () {
             this.mailInvalid = this.mailInvalidDe;
             this.fieldRequired1 = this.fieldRequired1De;
             this.fieldRequired2 = this.fieldRequired2De;
+            this.mailSent = this.mailSentDe;
+            this.snackbarClose = this.snackbarCloseDe;
         }
     };
     Object.defineProperty(ContactFormComponent.prototype, "name", {
@@ -10912,7 +10926,8 @@ var ContactFormComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./contact-form.component.scss */ "./src/app/components/contact-form/contact-form.component.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_language_service__WEBPACK_IMPORTED_MODULE_2__["LanguageService"],
-            src_app_services_email_service__WEBPACK_IMPORTED_MODULE_3__["EmailService"]])
+            src_app_services_email_service__WEBPACK_IMPORTED_MODULE_3__["EmailService"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"]])
     ], ContactFormComponent);
     return ContactFormComponent;
 }());
