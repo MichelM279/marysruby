@@ -1,38 +1,24 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LanguageService } from 'src/app/services/language.service';
 import { Language } from 'src/app/datatypes/language';
+import { ImageObject } from 'src/app/datatypes/images';
+
+// Documentation
+// https://github.com/sanjayV/ng-image-slider
 
 @Component({
-  selector: 'app-pedigree-card',
-  templateUrl: './pedigree-card.component.html',
-  styleUrls: ['./pedigree-card.component.scss']
+  selector: 'app-image-carousel',
+  templateUrl: './image-carousel.component.html',
+  styleUrls: ['./image-carousel.component.scss']
 })
-export class PedigreeCardComponent implements OnInit {
+export class ImageCarouselComponent implements OnInit {
 
   @Input()
-  name: String;
-
-  @Input()
-  dad: String;
-
-  @Input()
-  mom: String;
-
-  @Input()
-  daddad: String;
-
-  @Input()
-  dadmom: String;
-
-  @Input()
-  momdad: String;
-
-  @Input()
-  mommom: String;
+  imageObject: Array<ImageObject>;
 
   title: String;
-  private titleDe = 'Stammbaum';
-  private titleEn = 'Pedigree';
+  private titleDe = 'Galerie';
+  private titleEn = 'Gallery';
 
   constructor(private languageService: LanguageService) { }
 

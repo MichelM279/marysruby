@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Language } from 'src/app/datatypes/language';
 import { LanguageService } from 'src/app/services/language.service';
+import { ImageObject } from 'src/app/datatypes/images';
 
 @Component({
   selector: 'app-a',
@@ -16,6 +17,30 @@ export class AComponent implements OnInit {
   details: String;
   private detailsDe = 'Näheres folgt in Kürze!';
   private detailsEn = 'Details coming soon!';
+
+  imageObject: Array<ImageObject> = [{
+    image: 'assets/aWurf/gallery_treppe.JPG',
+    thumbImage: 'assets/aWurf/gallery_treppe_thumb.JPG'
+  }, {
+    image: 'assets/aWurf/gallery_cozy.JPG',
+    thumbImage: 'assets/aWurf/gallery_cozy_thumb.JPG'
+  }, {
+    image: 'assets/aWurf/gallery_cuddling.JPG',
+    thumbImage: 'assets/aWurf/gallery_cuddling_thumb.JPG'
+  }
+  ];
+
+  imageObject2: Array<ImageObject> = [{
+    image: 'assets/aWurf/gallery_sleeping.JPG',
+    thumbImage: 'assets/aWurf/gallery_sleeping_thumb.JPG'
+  }, {
+    image: 'assets/aWurf/gallery_yawn.JPG',
+    thumbImage: 'assets/aWurf/gallery_yawn_thumb.JPG'
+  }, {
+    image: 'assets/aWurf/gallery_dogpile.JPG',
+    thumbImage: 'assets/aWurf/gallery_dogpile_thumb.JPG'
+  }
+  ];
 
   constructor(private languageService: LanguageService) { }
 
