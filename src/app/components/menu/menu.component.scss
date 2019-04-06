@@ -44,7 +44,7 @@
 }
 
 .space-for-menu-button {
-  height: 48px;
+  min-height: 48px;
 }
 
 .menu-seperator {
@@ -57,6 +57,10 @@
 .upper-menu {
   display: flex;
   flex-direction: column;
+}
+
+.lower-menu {
+  margin-top: -48px;
 }
 
 .sidenav-button {
@@ -102,7 +106,7 @@
 .drawer-content {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% - 48px);
 }
 
 .expansion-panel-content {

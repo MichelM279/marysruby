@@ -19,18 +19,6 @@ export class AComponent implements OnInit {
   private detailsEn = 'Details coming soon!';
 
   imageObject: Array<ImageObject> = [{
-    image: 'assets/aWurf/gallery_treppe.JPG',
-    thumbImage: 'assets/aWurf/gallery_treppe_thumb.JPG'
-  }, {
-    image: 'assets/aWurf/gallery_cozy.JPG',
-    thumbImage: 'assets/aWurf/gallery_cozy_thumb.JPG'
-  }, {
-    image: 'assets/aWurf/gallery_cuddling.JPG',
-    thumbImage: 'assets/aWurf/gallery_cuddling_thumb.JPG'
-  }
-  ];
-
-  imageObject2: Array<ImageObject> = [{
     image: 'assets/aWurf/gallery_sleeping.JPG',
     thumbImage: 'assets/aWurf/gallery_sleeping_thumb.JPG'
   }, {
@@ -39,6 +27,15 @@ export class AComponent implements OnInit {
   }, {
     image: 'assets/aWurf/gallery_dogpile.JPG',
     thumbImage: 'assets/aWurf/gallery_dogpile_thumb.JPG'
+  }, {
+    image: 'assets/aWurf/gallery_cuddling.JPG',
+    thumbImage: 'assets/aWurf/gallery_cuddling_thumb.JPG'
+  }, {
+    image: 'assets/aWurf/gallery_treppe.JPG',
+    thumbImage: 'assets/aWurf/gallery_treppe_thumb.JPG'
+  }, {
+    image: 'assets/aWurf/gallery_cozy.JPG',
+    thumbImage: 'assets/aWurf/gallery_cozy_thumb.JPG'
   }
   ];
 
