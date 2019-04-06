@@ -16,7 +16,7 @@ export class PolaroidComponent implements OnInit {
   private textEn: String;
 
   @Input()
-  private imgPath: String;
+  imgPath: String;
 
   text: String;
 

@@ -33,13 +33,13 @@ export class PolaroidCollageComponent implements OnInit {
   private text4En: String;
 
   @Input()
-  private imgPath1: String;
+  imgPath1: String;
   @Input()
-  private imgPath2: String;
+  imgPath2: String;
   @Input()
-  private imgPath3: String;
+  imgPath3: String;
   @Input()
-  private imgPath4: String;
+  imgPath4: String;
 
   @Input()
   private nav1: string;
