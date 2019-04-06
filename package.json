@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "deploy": "ngh --cname=www.marysruby.de",
     "deploy-firebase": "firebase deploy --only hosting",
     "test": "ng test",
