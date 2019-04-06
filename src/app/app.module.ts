@@ -41,6 +41,7 @@ import { PolaroidComponent } from './components/polaroid/polaroid.component';
 import { PolaroidCollageComponent } from './components/polaroid-collage/polaroid-collage.component';
 import { PostItComponent } from './components/post-it/post-it.component';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
+import { NewsCardWithRoutingComponent } from './components/news-card-with-routing/news-card-with-routing.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -75,7 +76,8 @@ const routes: Routes = [
     PolaroidComponent,
     PolaroidCollageComponent,
     PostItComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    NewsCardWithRoutingComponent
   ],
   imports: [
     BrowserAnimationsModule,

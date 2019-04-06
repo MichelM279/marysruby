@@ -22,10 +22,6 @@ export class HomeComponent implements OnInit {
     this.languageChanged(this.languageService.language);
   }
 
-  onALitter() {
-    this.router.navigateByUrl('/a');
-  }
-
   private languageChanged(language: Language) {
     if (language === Language.ENGLISH) {
       this.news = this.newsEn;
