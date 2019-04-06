@@ -16,9 +16,11 @@ import {
   MatFormFieldModule,
   MatIconModule,
   MatInputModule,
+  MatListModule,
   MatSidenavModule,
   MatSnackBarModule
   } from '@angular/material';
+import { NgImageSliderModule } from 'ng-image-slider';
 // Pages
 import { HomeComponent } from './pages/home/home.component';
 import { EllaComponent } from './pages/ella/ella.component';
@@ -38,6 +40,7 @@ import { ListItemsCardComponent } from './components/list-items-card/list-items-
 import { PolaroidComponent } from './components/polaroid/polaroid.component';
 import { PolaroidCollageComponent } from './components/polaroid-collage/polaroid-collage.component';
 import { PostItComponent } from './components/post-it/post-it.component';
+import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -71,7 +74,8 @@ const routes: Routes = [
     ListItemsCardComponent,
     PolaroidComponent,
     PolaroidCollageComponent,
-    PostItComponent
+    PostItComponent,
+    ImageCarouselComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -87,8 +91,10 @@ const routes: Routes = [
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
+    MatListModule,
     MatSidenavModule,
     MatSnackBarModule,
+    NgImageSliderModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
