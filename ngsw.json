@@ -1,0 +1,128 @@
+{
+  "configVersion": 1,
+  "timestamp": 1554667792112,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.0f1cff820104d4a780bd.js",
+        "/polyfills.b284aac6041d3365a093.js",
+        "/runtime.26209474bfa8dc87a77c.js",
+        "/styles.1b04ad52632a12804309.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/aWurf/aWurf.JPG",
+        "/assets/aWurf/gallery_cozy.JPG",
+        "/assets/aWurf/gallery_cozy_thumb.JPG",
+        "/assets/aWurf/gallery_cuddling.JPG",
+        "/assets/aWurf/gallery_cuddling_thumb.JPG",
+        "/assets/aWurf/gallery_dogpile.JPG",
+        "/assets/aWurf/gallery_dogpile_thumb.JPG",
+        "/assets/aWurf/gallery_sleeping.JPG",
+        "/assets/aWurf/gallery_sleeping_thumb.JPG",
+        "/assets/aWurf/gallery_treppe.JPG",
+        "/assets/aWurf/gallery_treppe_thumb.JPG",
+        "/assets/aWurf/gallery_yawn.JPG",
+        "/assets/aWurf/gallery_yawn_thumb.JPG",
+        "/assets/ella/ella-profil-alt.JPG",
+        "/assets/ella/ella-profil.JPG",
+        "/assets/erste-schnappschuesse/die-gang.JPG",
+        "/assets/erste-schnappschuesse/ella-james-feld.JPG",
+        "/assets/erste-schnappschuesse/ella-wald.JPG",
+        "/assets/erste-schnappschuesse/james-sonne.JPG",
+        "/assets/flag-de.png",
+        "/assets/flag-uk.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/james/james-profil.JPG"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api",
+      "patterns": [
+        "https:\\/\\/us-central1-marysrubykennel\\.cloudfunctions\\.net\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 60000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/aWurf/aWurf.JPG": "5b420e8b029d5b58eef61e508b01b411bb2c5149",
+    "/assets/aWurf/gallery_cozy.JPG": "1a2920ea5d18987aeeb459c10fdf953be60ee25f",
+    "/assets/aWurf/gallery_cozy_thumb.JPG": "bec23bd087806516b06ef2d6915991cc122cf232",
+    "/assets/aWurf/gallery_cuddling.JPG": "86b0229d8dba18dd56f748e36c479395543dd4b8",
+    "/assets/aWurf/gallery_cuddling_thumb.JPG": "ce9725bcd65b706f938654827e2788ec63b8c96e",
+    "/assets/aWurf/gallery_dogpile.JPG": "87bf5fb96dc116e796245a72bc1bdaedbc0379b7",
+    "/assets/aWurf/gallery_dogpile_thumb.JPG": "52bd3cf4a4929bb56a8e8ae37cbd9871fb0dec0d",
+    "/assets/aWurf/gallery_sleeping.JPG": "3acf4dc78e95c66af21cf942d1776dfefdcae8f6",
+    "/assets/aWurf/gallery_sleeping_thumb.JPG": "6fdf49ff2fb0dca1eff7ba49d1bfbb638e558767",
+    "/assets/aWurf/gallery_treppe.JPG": "d90305ced84a604b1b9fb91beb8bcc77ed7e9bb3",
+    "/assets/aWurf/gallery_treppe_thumb.JPG": "cc7c684fe35b717efbb2a722b0f02125852ad545",
+    "/assets/aWurf/gallery_yawn.JPG": "482772042d4cd440e63503c8df1d1579f6c0e1bb",
+    "/assets/aWurf/gallery_yawn_thumb.JPG": "3cb0c593cee0200ee1b7b390c0956b5f0dbaf25c",
+    "/assets/ella/ella-profil-alt.JPG": "f4f7fcd09a763db61d466d61e3f507882d94d20a",
+    "/assets/ella/ella-profil.JPG": "feb86098af3de8c0d83e72eabc2f429a349933d4",
+    "/assets/erste-schnappschuesse/die-gang.JPG": "27f9f07546ea202af115a640e56ef4d2c4f046a9",
+    "/assets/erste-schnappschuesse/ella-james-feld.JPG": "be5147b2830bbf820fea282ad364e9af82d69fb4",
+    "/assets/erste-schnappschuesse/ella-wald.JPG": "0e653926b363becaaebbbd40b343a9943fad94f4",
+    "/assets/erste-schnappschuesse/james-sonne.JPG": "5e2db270e6b9eed7d8e57366097f00dbc4a90074",
+    "/assets/flag-de.png": "8bf4df272063228f283e90d3e624358343654e25",
+    "/assets/flag-uk.png": "c64d45c6b8560fcacb1f2227e4d78e3d3724d6e5",
+    "/assets/icons/icon-128x128.png": "4b80ee5d7d064a457ed8fa7f8d86f2b095d99d23",
+    "/assets/icons/icon-144x144.png": "0a499eb71d77a5c84096a4e5ebc8fff147fc8878",
+    "/assets/icons/icon-152x152.png": "2fe38e41032a8b1ca8f505b79588eb1cce4466b9",
+    "/assets/icons/icon-192x192.png": "3a8c8d29ed326b654c325b487a348b6853890060",
+    "/assets/icons/icon-384x384.png": "e190f6b2a6b5630f52ed39f58d06912150921423",
+    "/assets/icons/icon-512x512.png": "d8a2e4eacc159953fef47a2baf9850cd257636b1",
+    "/assets/icons/icon-72x72.png": "629eceaa124f7b6dc9203dcaf61b2056811b3fa9",
+    "/assets/icons/icon-96x96.png": "6a7ed2a016789496d929a98eec1d9f0b7549614e",
+    "/assets/james/james-profil.JPG": "3488e83e48a693eaaec358fe325808d97154054c",
+    "/favicon.ico": "7e4002217cf68398a2cfe8abccdb2be8c0eb7899",
+    "/index.html": "51d8c966b055e4a4e45e94bda057b75b6073a68f",
+    "/main.0f1cff820104d4a780bd.js": "1a9e07711660c8b51fb65072898497a568fa1956",
+    "/polyfills.b284aac6041d3365a093.js": "c6728c016f87969c273ea4c763f949dc090d57bc",
+    "/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/styles.1b04ad52632a12804309.css": "2bf41129082ac7e1fb1770ba38b40325bbfd1ae0"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
