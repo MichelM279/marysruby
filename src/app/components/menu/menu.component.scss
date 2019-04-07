@@ -59,10 +59,6 @@
   flex-direction: column;
 }
 
-.lower-menu {
-  margin-top: -48px;
-}
-
 .sidenav-button {
   background-color: transparent;
   text-align: left;
@@ -106,7 +102,7 @@
 .drawer-content {
   display: flex;
   flex-direction: column;
-  height: calc(100% - 48px);
+  height: 100%;
 }
 
 .expansion-panel-content {
