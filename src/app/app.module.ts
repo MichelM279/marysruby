@@ -43,6 +43,8 @@ import { PolaroidCollageComponent } from './components/polaroid-collage/polaroid
 import { PostItComponent } from './components/post-it/post-it.component';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
 import { NewsCardWithRoutingComponent } from './components/news-card-with-routing/news-card-with-routing.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -99,7 +101,8 @@ const routes: Routes = [
     MatSnackBarModule,
     NgImageSliderModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
