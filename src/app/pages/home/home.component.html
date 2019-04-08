@@ -1,13 +1,38 @@
 <h1>{{news}}</h1>
 
+<app-polaroid-collage
+  titleDe='Unser A Wurf'
+  titleEn='Our A Litter'
+  imgPath1='assets/aWurf/showcase-gruppenkuscheln.JPG'
+  text1De='Gruppenkuscheln'
+  text1En='Group Hugs!'
+  imgPath2='assets/aWurf/showcase-essenszeit.JPG'
+  text2De='Es wird langsam eng'
+  text2En='Dinner time'>
+</app-polaroid-collage>
+
 <app-news-card-with-routing
   titleDe='A-Wurf'
   titleEn='A-Litter'
   date='16.03.2019'
-  textDe='Ella bringt 8 gesunde kleine Welpen zur Welt! UPDATE: Es gibt nun auch erste Fotos!'
-  textEn='Ella births 8 healthy little puppies! UPDATE: We now have first fotos uploaded!'
+  textDe='Ella bringt 8 gesunde kleine Welpen zur Welt!'
+  textEn='Ella births 8 healthy little puppies!'
   targetRoute='/a'>
 </app-news-card-with-routing>
+
+<app-polaroid 
+    imgPath='assets/sonstige/james_ella_treppe.JPG'
+    textDe='Traumpaar'
+    textEn='Dream Team'>
+</app-polaroid>
+
+<app-news-card
+  titleDe='Ellas Untersuchung'
+  titleEn="Ella's Doctors Appointment"
+  date='15.02.2019'
+  textDe='Ellas Trächtigkeit ist nun offiziell bestätigt!'
+  textEn="Ella's pregnancy is now officially confirmed!">
+</app-news-card>
 
 <app-polaroid-collage
   titleDe='Unsere Hunde'
@@ -21,14 +46,6 @@
   text2En='Ella'
   nav2='/ella'>
 </app-polaroid-collage>
-
-<app-news-card
-  titleDe='Ellas Untersuchung'
-  titleEn="Ella's Doctors Appointment"
-  date='15.02.2019'
-  textDe='Ellas Trächtigkeit ist nun offiziell bestätigt!'
-  textEn="Ella's pregnancy is now officially confirmed!">
-</app-news-card>
 
 <app-news-card
   titleDe="Über Uns"

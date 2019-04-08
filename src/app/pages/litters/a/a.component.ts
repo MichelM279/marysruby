@@ -31,9 +31,6 @@ export class AComponent implements OnInit {
     image: 'assets/aWurf/gallery_cuddling.JPG',
     thumbImage: 'assets/aWurf/gallery_cuddling_thumb.JPG'
   }, {
-    image: 'assets/aWurf/gallery_treppe.JPG',
-    thumbImage: 'assets/aWurf/gallery_treppe_thumb.JPG'
-  }, {
     image: 'assets/aWurf/gallery_cozy.JPG',
     thumbImage: 'assets/aWurf/gallery_cozy_thumb.JPG'
   }
