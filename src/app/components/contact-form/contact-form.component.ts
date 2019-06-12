@@ -4,7 +4,7 @@ import { EmailService } from 'src/app/services/email.service';
 import { Language } from 'src/app/datatypes/language';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Contact } from 'src/app/datatypes/contact';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact-form',
