@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1554749413878,
+  "timestamp": 1560364272999,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,10 +10,13 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.29b4e8d989245116b9f0.js",
-        "/polyfills.b284aac6041d3365a093.js",
-        "/runtime.26209474bfa8dc87a77c.js",
-        "/styles.1b04ad52632a12804309.css"
+        "/main-es2015.edafa1287c28d2a8d090.js",
+        "/main-es5.aabc056896a399ede994.js",
+        "/polyfills-es2015.6f7a0a5662911849bd1e.js",
+        "/polyfills-es5.876d4ea5425f961f05b4.js",
+        "/runtime-es2015.858f8dd898b75fe86926.js",
+        "/runtime-es5.741402d1d47331ce975c.js",
+        "/styles.442f204a5c2c0290dd95.css"
       ],
       "patterns": []
     },
@@ -103,11 +106,14 @@
     "/assets/james/james-profil.JPG": "3488e83e48a693eaaec358fe325808d97154054c",
     "/assets/sonstige/james_ella_treppe.JPG": "d90305ced84a604b1b9fb91beb8bcc77ed7e9bb3",
     "/favicon.ico": "7e4002217cf68398a2cfe8abccdb2be8c0eb7899",
-    "/index.html": "92a464bba91ab9765cf156f81ebccb288ce823fe",
-    "/main.29b4e8d989245116b9f0.js": "82489144c37e53432fc552714378974a8e9aa5b7",
-    "/polyfills.b284aac6041d3365a093.js": "c6728c016f87969c273ea4c763f949dc090d57bc",
-    "/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/styles.1b04ad52632a12804309.css": "2bf41129082ac7e1fb1770ba38b40325bbfd1ae0"
+    "/index.html": "77c180b08b17a4cc819e9d9e2274b05eaa1a6589",
+    "/main-es2015.edafa1287c28d2a8d090.js": "08ed6c33b6bb9b4e53cc71e9186d96b878af6646",
+    "/main-es5.aabc056896a399ede994.js": "2265abe3f9f05d910d75809514d19cff5a3b0557",
+    "/polyfills-es2015.6f7a0a5662911849bd1e.js": "9c18890eb1bd685698cf8403d18ac11c143d97de",
+    "/polyfills-es5.876d4ea5425f961f05b4.js": "75eef4eed987b797e9679bec83f84d753d2a2098",
+    "/runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/styles.442f204a5c2c0290dd95.css": "fa64167944c36f980bcf0299891e1d10ef02dd71"
   },
   "navigationUrls": [
     {
