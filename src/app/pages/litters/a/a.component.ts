@@ -14,10 +14,6 @@ export class AComponent implements OnInit {
   private headlineDe = 'A-Wurf';
   private headlineEn = 'A-Litter';
 
-  details: String;
-  private detailsDe = 'Näheres folgt in Kürze!';
-  private detailsEn = 'Details coming soon!';
-
   imageObject: Array<ImageObject> = [{
     image: 'assets/aWurf/gallery_sleeping.JPG',
     thumbImage: 'assets/aWurf/gallery_sleeping_thumb.JPG'
@@ -46,10 +42,8 @@ export class AComponent implements OnInit {
   private languageChanged(language: Language) {
     if (language === Language.ENGLISH) {
       this.headline = this.headlineEn;
-      this.details = this.detailsEn;
     } else {
       this.headline = this.headlineDe;
-      this.details = this.detailsDe;
     }
   }
 
