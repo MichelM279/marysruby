@@ -11,7 +11,7 @@ import { Language } from 'src/app/datatypes/language';
 })
 export class MenuComponent implements OnInit {
 
-  @ViewChild('drawer') drawer: MatDrawer;
+  @ViewChild('drawer', { static: true }) drawer: MatDrawer;
 
   homepage: String;
   homepageDe = 'Startseite';
