@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1560367646539,
+  "timestamp": 1577107112820,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,13 +10,13 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.b68870784e1f1f409ee8.js",
-        "/main-es5.510735c183008c843f19.js",
-        "/polyfills-es2015.6f7a0a5662911849bd1e.js",
-        "/polyfills-es5.876d4ea5425f961f05b4.js",
-        "/runtime-es2015.858f8dd898b75fe86926.js",
-        "/runtime-es5.741402d1d47331ce975c.js",
-        "/styles.442f204a5c2c0290dd95.css"
+        "/main-es2015.82dde38ac4ae85d6a81e.js",
+        "/main-es5.82dde38ac4ae85d6a81e.js",
+        "/polyfills-es2015.f0cc4095595bc44e3bbc.js",
+        "/polyfills-es5.d60946b2824f427f92d4.js",
+        "/runtime-es2015.edb2fcf2778e7bf1d426.js",
+        "/runtime-es5.edb2fcf2778e7bf1d426.js",
+        "/styles.cb11226d79d3784ff549.css"
       ],
       "patterns": []
     },
@@ -266,14 +266,14 @@
     "/assets/james/james-profil.JPG": "3488e83e48a693eaaec358fe325808d97154054c",
     "/assets/sonstige/james_ella_treppe.JPG": "d90305ced84a604b1b9fb91beb8bcc77ed7e9bb3",
     "/favicon.ico": "7e4002217cf68398a2cfe8abccdb2be8c0eb7899",
-    "/index.html": "96332959f3bf846681f52fa620b8d93052c059bf",
-    "/main-es2015.b68870784e1f1f409ee8.js": "bf6981af24084228eb0fc7253b3f061473d258be",
-    "/main-es5.510735c183008c843f19.js": "df71d4c55f856aad9ca219f13db6a9b31c99a00b",
-    "/polyfills-es2015.6f7a0a5662911849bd1e.js": "9c18890eb1bd685698cf8403d18ac11c143d97de",
-    "/polyfills-es5.876d4ea5425f961f05b4.js": "75eef4eed987b797e9679bec83f84d753d2a2098",
-    "/runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/styles.442f204a5c2c0290dd95.css": "fa64167944c36f980bcf0299891e1d10ef02dd71"
+    "/index.html": "3eaeb6c7f8c5a56f2a5a7712d9c908d36d5d22a8",
+    "/main-es2015.82dde38ac4ae85d6a81e.js": "c62cbe16e9c5fac2bf67e6d9c80dc00c269dd0a0",
+    "/main-es5.82dde38ac4ae85d6a81e.js": "f5361505695d37a772290e049572e9d73dc22cbe",
+    "/polyfills-es2015.f0cc4095595bc44e3bbc.js": "684e10bf9bf7155946d900ec4bce7f8ca7ad68de",
+    "/polyfills-es5.d60946b2824f427f92d4.js": "3003706dc1684a65c645b0436af552e5338a2af8",
+    "/runtime-es2015.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.cb11226d79d3784ff549.css": "af05a1eeaef289faedf4dbe1a0534131aeeee7e2"
   },
   "navigationUrls": [
     {
