@@ -1,22 +1,25 @@
 {
   "configVersion": 1,
-  "timestamp": 1577107112820,
+  "timestamp": 1599157129230,
   "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.82dde38ac4ae85d6a81e.js",
-        "/main-es5.82dde38ac4ae85d6a81e.js",
-        "/polyfills-es2015.f0cc4095595bc44e3bbc.js",
-        "/polyfills-es5.d60946b2824f427f92d4.js",
-        "/runtime-es2015.edb2fcf2778e7bf1d426.js",
-        "/runtime-es5.edb2fcf2778e7bf1d426.js",
-        "/styles.cb11226d79d3784ff549.css"
+        "/main-es2015.0972c52a0fded39d45b3.js",
+        "/main-es5.0972c52a0fded39d45b3.js",
+        "/polyfills-es2015.e353ed315899118c3ad2.js",
+        "/polyfills-es5.51db4f6197653b7b7a1f.js",
+        "/runtime-es2015.41eb3616844b6c96e4f3.js",
+        "/runtime-es5.41eb3616844b6c96e4f3.js",
+        "/styles.a226618fc0c072cda2cb.css"
       ],
       "patterns": []
     },
@@ -24,6 +27,9 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "/assets/aWurf/aWurf.JPG",
         "/assets/aWurf/gallery_1.JPG",
@@ -150,6 +156,9 @@
       "maxSize": 100,
       "maxAge": 259200000,
       "timeoutMs": 60000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "version": 1
     }
   ],
@@ -266,14 +275,14 @@
     "/assets/james/james-profil.JPG": "3488e83e48a693eaaec358fe325808d97154054c",
     "/assets/sonstige/james_ella_treppe.JPG": "d90305ced84a604b1b9fb91beb8bcc77ed7e9bb3",
     "/favicon.ico": "7e4002217cf68398a2cfe8abccdb2be8c0eb7899",
-    "/index.html": "3eaeb6c7f8c5a56f2a5a7712d9c908d36d5d22a8",
-    "/main-es2015.82dde38ac4ae85d6a81e.js": "c62cbe16e9c5fac2bf67e6d9c80dc00c269dd0a0",
-    "/main-es5.82dde38ac4ae85d6a81e.js": "f5361505695d37a772290e049572e9d73dc22cbe",
-    "/polyfills-es2015.f0cc4095595bc44e3bbc.js": "684e10bf9bf7155946d900ec4bce7f8ca7ad68de",
-    "/polyfills-es5.d60946b2824f427f92d4.js": "3003706dc1684a65c645b0436af552e5338a2af8",
-    "/runtime-es2015.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/runtime-es5.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/styles.cb11226d79d3784ff549.css": "af05a1eeaef289faedf4dbe1a0534131aeeee7e2"
+    "/index.html": "b7cbf4526db265f93b83876052a31b53957d8e73",
+    "/main-es2015.0972c52a0fded39d45b3.js": "adc2a1d253eb4726ab346a1ff8890e30eaa1a6cb",
+    "/main-es5.0972c52a0fded39d45b3.js": "cc242953355c5198c14f502e627fc6ac0bfb2c84",
+    "/polyfills-es2015.e353ed315899118c3ad2.js": "e4406825d5dc566bae1ac7e4bf6764242185f1dd",
+    "/polyfills-es5.51db4f6197653b7b7a1f.js": "ce618a0807ba5e00632c91c7c02c8af94dfadfad",
+    "/runtime-es2015.41eb3616844b6c96e4f3.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.41eb3616844b6c96e4f3.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.a226618fc0c072cda2cb.css": "168fc1c71b3640e0dba1a2104947b67765e16580"
   },
   "navigationUrls": [
     {
