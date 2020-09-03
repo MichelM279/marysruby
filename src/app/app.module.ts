@@ -18,7 +18,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import 'hammerjs';
 import { NgImageSliderModule } from 'ng-image-slider';
 // Pages
 import { HomeComponent } from './pages/home/home.component';
