@@ -66,12 +66,13 @@ export class ContactFormComponent implements OnInit {
   }
 
   onSubmit(): void {
-    const contact: Contact = this.formToContact(this.contactForm);
-    this.emailService.sendContactEmail(contact).subscribe(res => {
-      console.log(res);
-    });
+    // const contact: Contact = this.formToContact(this.contactForm);
+    // this.emailService.sendContactEmail(contact).subscribe(res => {
+    //   console.log(res);
+    // });
     // TODO Error handling, incl proper response from server
-    this.snackbar.open(this.mailSent, this.snackbarClose, {duration: 6000});
+    // this.snackbar.open(this.mailSent, this.snackbarClose, {duration: 6000});
+    this.snackbar.open("Formular derzeit nicht verfügbar!", this.snackbarClose, {duration: 6000});
   }
 
   private formToContact(form: FormGroup): Contact {
