@@ -1,11 +1,23 @@
 <h1>{{news}}</h1>
 
+<app-polaroid-collage
+  titleDe='Wir erwarten Welpen'
+  titleEn='We are expecting puppies'
+  imgPath1='assets/bWurf/rudi.jpg'
+  text1De='Rudi'
+  text1En='Rudi'
+  imgPath2='assets/ella/ella-b.jpg'
+  text2De='Ella'
+  text2En='Ella'
+  nav2='/ella'>
+</app-polaroid-collage>
+
 <app-news-card
-  titleDe='Welpenvergabe'
-  titleEn="Puppy allocation"
-  date='12.06.2019'
-  textDe='Alle Welpen des A-Wurfs sind in ein liebevolles Zuhause vermittelt worden.'
-  textEn="All puppies of our a-litter have been taken into a loving home.">
+  titleDe='B-Wurf'
+  titleEn="B-Litter"
+  date='??.10.2020'
+  textDe='Wir freuen uns mitteilen zu können, dass unser B-Wurf unterwegs ist.'
+  textEn="We are happy to announce, that our B litter is underway.">
 </app-news-card>
 
 <app-polaroid-collage
@@ -25,7 +37,9 @@
   date='16.03.2019'
   textDe='Ella bringt 8 gesunde kleine Welpen zur Welt!'
   textEn='Ella births 8 healthy little puppies!'
-  targetRoute='/a'>
+  targetRoute='/a'
+  routeTextDe='Zum A-Wurf!'
+  routeTextEn='To the A-Litter!'>
 </app-news-card-with-routing>
 
 <app-polaroid 

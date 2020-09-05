@@ -28,8 +28,15 @@ export class NewsCardWithRoutingComponent implements OnInit {
   @Input()
   private targetRoute: string;
 
+  @Input()
+  private routeTextDe: string;
+
+  @Input()
+  private routeTextEn: string;
+
   title: string;
   text: string;
+  routeText: string;
 
   constructor(private languageService: LanguageService,
     private router: Router) { }
@@ -43,9 +50,11 @@ export class NewsCardWithRoutingComponent implements OnInit {
     if (language === Language.ENGLISH) {
       this.title = this.titleEn;
       this.text = this.textEn;
+      this.routeText = this.routeTextEn;
     } else {
       this.title = this.titleDe;
       this.text = this.textDe;
+      this.routeText = this.routeTextDe;
     }
   }
 

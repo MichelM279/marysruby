@@ -24,6 +24,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { EllaComponent } from './pages/ella/ella.component';
 import { JamesComponent } from './pages/james/james.component';
 import { AComponent } from './pages/litters/a/a.component';
+import { BComponent } from './pages/litters/b/b.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -49,6 +50,7 @@ const routes: Routes = [
   { path: 'ella', component: EllaComponent },
   { path: 'james', component: JamesComponent },
   { path: 'a', component: AComponent },
+  { path: 'b', component: BComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'impressum', component: ImpressumComponent },
   { path: '**', component: NotFoundComponent}
@@ -62,6 +64,7 @@ const routes: Routes = [
     EllaComponent,
     JamesComponent,
     AComponent,
+    BComponent,
     NotFoundComponent,
     // Components
     HeaderComponent,
@@ -77,7 +80,7 @@ const routes: Routes = [
     PolaroidCollageComponent,
     PostItComponent,
     ImageCarouselComponent,
-    NewsCardWithRoutingComponent
+    NewsCardWithRoutingComponent,
   ],
   imports: [
     BrowserAnimationsModule,
