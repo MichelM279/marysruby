@@ -13,13 +13,15 @@ export class JamesComponent implements OnInit {
   titleListDe: String[] = [
     'Dt. Champion KfT',
     'KfT Jugendchampion',
-    'Luxemburg Champion'
+    'Luxemburg Champion',
+    'Deutscher Champion VdH'
   ];
 
   titleListEn: String[] = [
     'German KfT Champion',
     'KfT Youth Champion',
-    'Luxemburg Champion'
+    'Luxemburg Champion',
+    'German Champion VdH'
   ];
 
   factsDe: String[] = [
